@@ -145,8 +145,20 @@ body {
 	// SHARE 
 	// ******
 
+	.sharepage {
+		padding: 36px 0px 0px 12px;
+	}
+
 	.sharepage_subtitle, .social_icons, .facebook_icon, .twitter_icon, .google_icon {
 		display: inline-block;
+	}
+
+	.facebook_icon, .twitter_icon, .google_icon {
+		margin-right: 24px;
+	}
+
+	.sharepage_subtitle {
+		margin-right: 48px;
 	}
 
 	.twitter_icon {
