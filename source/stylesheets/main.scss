@@ -61,25 +61,16 @@ body {
 // FULL PAGE DIVS
 // ***********
 
-.carousel, 
-.signup, 
-.sharethefacts_home, 
-.sharepage, 
-.yourteam_top,
-.yourteam_middle,
-.yourteam_bottom,
-.campaigns_top,
-.campaigns_uppermiddle,
-.campaigns_lowermiddle,
-.campaigns_bottom,
-.volunteer_top, 
-.volunteer_bottom,
-.donate {
-	margin-bottom: 12px;
+
+
+@each $i in $fullpagedivs{
+    .#{$i} {
+         	margin-bottom: 12px;
 	width: $div_full;
 	background-color: #999999;
 	// height: 300px;
 	clear: both;
+    }
 }
 
 .yourteam_top,
@@ -103,18 +94,14 @@ body {
 // ********
 // BOX STRUCTURE
 // ********
-
-.box1, 
-.box2, 
-.box3, 
-.box4, 
-.box5, 
-.box6 {
-	float: left;
-	background-color: #333333;
-	height: 300px;
-	width: $div_third;
-	margin-bottom: 12px;
+@each $i in $boxgrid {
+    .#{$i} {
+		float: left;
+		background-color: #333333;
+		height: 300px;
+		width: $div_third;
+		margin-bottom: 12px;
+	}
 }
 
 .box1, 
@@ -139,24 +126,51 @@ body {
 	-webkit-margin-after: 0;
 	padding-bottom: 12px;
 }
+
+.button {
+	width: 96px;
+	height: 36px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 12px;
+	img {
+		width: 96px;
+		height: 36px;
+	}
+}
 	
+// ************************************************************************
 
 	// ******
-	// SHARE 
+	// PARTIALS 
 	// ******
 
-	.sharepage_subtitle, .social_icons, .facebook_icon, .twitter_icon, .google_icon {
-		display: inline-block;
-	}
+		// ******
+		// SHARE 
+		// ******
 
-	.twitter_icon {
-		width: 77px;
-	}
+		.sharepage_subtitle, .social_icons, .facebook_icon, .twitter_icon, .google_icon {
+			display: inline-block;
+		}
 
-	.fb_iframe_widget span {
-		vertical-align: inherit !important;
-	}
+		.twitter_icon {
+			width: 77px;
+		}
 
+		.fb_iframe_widget span {
+			vertical-align: inherit !important;
+		}
+
+		// ******
+		// SIGNUP
+		// ******
+
+		.signup {
+			padding: 12px;
+		}
+
+
+// *********************************************************************************************
 
 	// ******
 	// HOME PAGE 
@@ -216,27 +230,17 @@ body {
 
 @media (max-width: 768px) {
 
-	.container,
-	.carousel, 
-	.signup, 
-	.sharethefacts_home, 
-	.sharepage, 
-	.yourteam_top,
-	.yourteam_middle,
-	.yourteam_bottom,
-	.campaigns_top,
-	.campaigns_uppermiddle,
-	.campaigns_lowermiddle,
-	.campaigns_bottom,
-	.volunteer_top, 
-	.volunteer_bottom,
-	.donate  {
-		width: 748px !important;
+	@each $i in $fullpagedivs{
+	    .#{$i} {
+			width: 748px !important;
+		}
 	}
 
-	.box1, .box2, .box3, .box4, .box5, .box6 {
-		width: $div-half;
-		margin-right: 0 !important;
+	@each $i in $boxgrid {
+	    .#{$i} {
+			width: $div-half;
+			margin-right: 0 !important;
+		}
 	}
 
 	.box1, .box3, .box5 {
@@ -250,27 +254,17 @@ body {
 
 @media (max-width: 640px) {
 
-	.container,
-	.carousel, 
-	.signup, 
-	.sharethefacts_home, 
-	.sharepage, 
-	.yourteam_top,
-	.yourteam_middle,
-	.yourteam_bottom,
-	.campaigns_top,
-	.campaigns_uppermiddle,
-	.campaigns_lowermiddle,
-	.campaigns_bottom,
-	.volunteer_top, 
-	.volunteer_bottom,
-	.donate  {
-		width: 620px !important;
+	@each $i in $fullpagedivs{
+	    .#{$i} {
+			width: 620px !important;
+		}
 	}
 
-	.box1, .box2, .box3, .box4, .box5, .box6 {
-		width: 304px !important;
-		margin-right: 0 !important;
+	@each $i in $boxgrid {
+	    .#{$i} {
+			width: 304px !important;
+			margin-right: 0 !important;
+		}
 	}
 
 	.box1, .box3, .box5 {
@@ -284,27 +278,17 @@ body {
 
 @media (max-width: 480px) {
 
-	.container,
-	.carousel, 
-	.signup, 
-	.sharethefacts_home, 
-	.sharepage, 
-	.yourteam_top,
-	.yourteam_middle,
-	.yourteam_bottom,
-	.campaigns_top,
-	.campaigns_uppermiddle,
-	.campaigns_lowermiddle,
-	.campaigns_bottom,
-	.volunteer_top, 
-	.volunteer_bottom,
-	.donate  {
-		width: 440px !important;
+	@each $i in $fullpagedivs{
+	    .#{$i} {
+			width: 440px !important;
+		}
 	}
 
-	.box1, .box2, .box3, .box4, .box5, .box6 {
-		width: 440px !important;
-		margin-right: 0 !important;
+	@each $i in $boxgrid {
+	    .#{$i} {
+			width: 440px !important;
+			margin-right: 0 !important;
+		}
 	}
 
 	.box1, .box3, .box5 {
@@ -318,27 +302,17 @@ body {
 
 @media (max-width: 320px) {
 
-	.container,
-	.carousel, 
-	.signup, 
-	.sharethefacts_home, 
-	.sharepage, 
-	.yourteam_top,
-	.yourteam_middle,
-	.yourteam_bottom,
-	.campaigns_top,
-	.campaigns_uppermiddle,
-	.campaigns_lowermiddle,
-	.campaigns_bottom,
-	.volunteer_top, 
-	.volunteer_bottom,
-	.donate  {
-		width: 300px !important;
+	@each $i in $fullpagedivs{
+	    .#{$i} {
+			width: 300px !important;
+		}
 	}
 
-	.box1, .box2, .box3, .box4, .box5, .box6 {
-		width: 300px !important;
-		margin-right: 0 !important;
+	@each $i in $boxgrid {
+    	.#{$i} {
+			width: 300px !important;
+			margin-right: 0 !important;
+		}
 	}
 
 	.box1, .box3, .box5 {
