@@ -1,0 +1,276 @@
+// ***********
+// HEADERFOOTER
+// ***********
+
+@import 'main_var.scss';
+
+body {
+	font-family: $font;
+	font-size: 100% !important;
+	.container {
+		width: 960px;
+		margin: auto !important;
+		font-size: $global-font-size;
+
+		.logo {
+		margin: 20px 0;
+		width: 45%;
+		display: inline-block;
+		}
+
+		.navbar-default .navbar-nav > li > a {
+			text-transform: uppercase;
+		}
+
+		.social_share {
+			float: right;
+			width: 300px;
+			height: 50px;
+			margin: 20px 0;
+			display: inline-block;
+			background-color: #efefef;
+
+			.fb-like.fb_edge_widget_with_comment.fb_iframe_widget, .twitter #twitter-widget-0 {
+				float: right;
+				margin: 15px;
+			}
+		}
+
+		footer {
+			background-color: #efefef;
+
+			ul {
+				list-style-type: none;
+				float: left;
+				padding-left: 20px; 
+			}
+
+			.mabutt {
+				clear: both;
+				padding: 5px 20px ;
+				background-color: #dddddd;
+			}
+		}
+	}	
+}
+
+// ***************************************************************************************************
+
+
+// ***********
+// FULL PAGE DIVS
+// ***********
+
+.carousel, 
+.signup, 
+.sharethefacts_home, 
+.sharepage, 
+.yourteam_top,
+.yourteam_middle,
+.yourteam_bottom,
+.campaigns_top,
+.campaigns_uppermiddle,
+.campaigns_lowermiddle,
+.campaigns_bottom,
+.volunteer_top, 
+.volunteer_bottom,
+.donate {
+	margin-bottom: 12px;
+	width: $div-full;
+	background-color: #999999;
+	height: 300px;
+	clear: both;
+}
+
+.yourteam_top,
+.yourteam_bottom,
+.signup, 
+.sharepage {
+	height: 100px;
+}
+
+.campaigns_top,
+.campaigns_uppermiddle,
+.campaigns_lowermiddle,
+.campaigns_bottom,
+.sharethefacts_home {
+	height: 200px;
+}
+
+
+// ***************************************************************************************************
+
+// ********
+// BOX STRUCTURE
+// ********
+
+.box1, 
+.box2, 
+.box3, 
+.box4, 
+.box5, 
+.box6 {
+	float: left;
+	background-color: #333333;
+	height: 300px;
+	width: $div-third;
+	margin-bottom: 12px;
+}
+
+.box1, 
+.box2, 
+.box4, 
+.box5 {
+	margin-right: 12px;
+	
+}
+
+// ***************************************************************************************************
+
+// *********
+// INNER DIV STRUCTURES
+// *********
+
+
+
+// ***************************************************************************************************
+
+// ***********
+// MEDIA QUERIES
+// ***********
+
+@media (max-width: 768px) {
+
+	.container,
+	.carousel, 
+	.signup, 
+	.sharethefacts_home, 
+	.sharepage, 
+	.yourteam_top,
+	.yourteam_middle,
+	.yourteam_bottom,
+	.campaigns_top,
+	.campaigns_uppermiddle,
+	.campaigns_lowermiddle,
+	.campaigns_bottom,
+	.volunteer_top, 
+	.volunteer_bottom,
+	.donate  {
+		width: 748px !important;
+	}
+
+	.box1, .box2, .box3, .box4, .box5, .box6 {
+		width: $div-half;
+		margin-right: 0 !important;
+	}
+
+	.box1, .box3, .box5 {
+		margin-right: 12px !important;
+	}
+
+}
+
+// ***************************************************************************************************
+
+
+@media (max-width: 640px) {
+
+	.container,
+	.carousel, 
+	.signup, 
+	.sharethefacts_home, 
+	.sharepage, 
+	.yourteam_top,
+	.yourteam_middle,
+	.yourteam_bottom,
+	.campaigns_top,
+	.campaigns_uppermiddle,
+	.campaigns_lowermiddle,
+	.campaigns_bottom,
+	.volunteer_top, 
+	.volunteer_bottom,
+	.donate  {
+		width: 620px !important;
+	}
+
+	.box1, .box2, .box3, .box4, .box5, .box6 {
+		width: 304px !important;
+		margin-right: 0 !important;
+	}
+
+	.box1, .box3, .box5 {
+		margin-right: 12px !important;
+	}
+
+}
+
+// ***************************************************************************************************
+
+
+@media (max-width: 480px) {
+
+	.container,
+	.carousel, 
+	.signup, 
+	.sharethefacts_home, 
+	.sharepage, 
+	.yourteam_top,
+	.yourteam_middle,
+	.yourteam_bottom,
+	.campaigns_top,
+	.campaigns_uppermiddle,
+	.campaigns_lowermiddle,
+	.campaigns_bottom,
+	.volunteer_top, 
+	.volunteer_bottom,
+	.donate  {
+		width: 440px !important;
+	}
+
+	.box1, .box2, .box3, .box4, .box5, .box6 {
+		width: 440px !important;
+		margin-right: 0 !important;
+	}
+
+	.box1, .box3, .box5 {
+		margin-right: 12px !important;
+	}
+
+}
+
+// ***************************************************************************************************
+
+
+@media (max-width: 320px) {
+
+	.container,
+	.carousel, 
+	.signup, 
+	.sharethefacts_home, 
+	.sharepage, 
+	.yourteam_top,
+	.yourteam_middle,
+	.yourteam_bottom,
+	.campaigns_top,
+	.campaigns_uppermiddle,
+	.campaigns_lowermiddle,
+	.campaigns_bottom,
+	.volunteer_top, 
+	.volunteer_bottom,
+	.donate  {
+		width: 300px !important;
+	}
+
+	.box1, .box2, .box3, .box4, .box5, .box6 {
+		width: 300px !important;
+		margin-right: 0 !important;
+	}
+
+	.box1, .box3, .box5 {
+		margin-right: 12px !important;
+	}
+
+}
+
+
+
