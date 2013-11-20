@@ -153,24 +153,20 @@ body {
 			padding: 36px 0px 0px 12px;
 		}
 
-		.sharepage_subtitle, .social_icons, .facebook_icon, .twitter_icon, .google_icon {
+		.sharepage_subtitle, .social_icons {
 			display: inline-block;
 		}
 
-		.facebook_icon, .twitter_icon, .google_icon {
-			margin-right: 24px;
+		@each $i in $social {
+		    .#{$i} {
+				margin-right: 24px;
+				display: inline-block;
+			}
 		}
+
 
 		.sharepage_subtitle {
 			margin-right: 48px;
-		}
-
-		.twitter_icon {
-			width: 77px;
-		}
-
-		.sharepage_subtitle, .social_icons, .facebook_icon, .twitter_icon, .google_icon {
-			display: inline-block;
 		}
 
 		.twitter_icon {
