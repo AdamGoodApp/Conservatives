@@ -135,7 +135,26 @@ body {
 	font-size: $subtitle_font_size;
 	text-transform: uppercase;
 	font-weight: bold;
-}
+}	
+
+	// ******
+	// SHARE 
+	// ******
+
+	.sharepage_subtitle, .social_icons, .facebook_icon, .twitter_icon, .google_icon {
+		display: inline-block;
+	}
+
+	.twitter_icon {
+		width: 77px;
+	}
+
+	.fb_iframe_widget span {
+		vertical-align: inherit !important;
+	}
+
+
+
 
 	// ******
 	// HOME PAGE 
