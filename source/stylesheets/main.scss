@@ -30,7 +30,7 @@ body {
 			display: inline-block;
 			background-color: #efefef;
 
-			.fb-like.fb_edge_widget_with_comment.fb_iframe_widget, .twitter #twitter-widget-0 {
+			.fb-like.fb_edge_widget_with_comment.fb_iframe_widget, .twitter iframe {
 				float: right;
 				margin: 15px;
 			}
@@ -98,7 +98,7 @@ body {
 @each $i in $boxgrid {
     .#{$i} {
 		float: left;
-		background-color: #333333;
+		background-color: #777777;
 		height: 300px;
 		width: $div_third;
 		margin-bottom: 12px;
@@ -238,6 +238,14 @@ body {
 			}
 		}
 	}
+	
+	// SIX BOXES
+
+	.local_team {
+		background-color: #eeeeee;
+		padding: 12px;
+	}
+
 
 
 // *********************************************************************************************
