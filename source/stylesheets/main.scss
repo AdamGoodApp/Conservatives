@@ -281,8 +281,16 @@ body {
 	// ******
 
 	.response_left {
-		float: left;
-		
+		margin-right: 34px;
+		vertical-align: top;
+	}
+
+	.response_right {
+		width: 600px;
+	}
+
+	.response_left, .response_right {
+		display: inline-block;
 	}
 
 
@@ -311,6 +319,21 @@ body {
 		margin-right: 12px !important;
 	}
 
+
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 400px;
+	}
+
+	.response_left {
+		vertical-align: top;
+	}
+
+
+
 }
 
 // ***************************************************************************************************
@@ -333,6 +356,14 @@ body {
 
 	.box1, .box3, .box5 {
 		margin-right: 12px !important;
+	}
+
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 594px;
 	}
 
 }
@@ -359,6 +390,14 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 412px;
+	}
+
 }
 
 // ***************************************************************************************************
@@ -381,6 +420,14 @@ body {
 
 	.box1, .box3, .box5 {
 		margin-right: 12px !important;
+	}
+
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 272px;
 	}
 
 }
