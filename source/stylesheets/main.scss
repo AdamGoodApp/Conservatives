@@ -78,7 +78,7 @@ body {
 	margin-bottom: 12px;
 	width: $div_full;
 	background-color: #999999;
-	height: 300px;
+	// height: 300px;
 	clear: both;
 }
 
@@ -135,6 +135,9 @@ body {
 	font-size: $subtitle_font_size;
 	text-transform: uppercase;
 	font-weight: bold;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	padding-bottom: 12px;
 }
 
 	// ******
@@ -143,43 +146,48 @@ body {
 	
 	.carousel {
 		padding: 12px;
-		position: relative;
 
-		.carousel_image {
-			width: 340px;
-			height: 200px;
-			margin: 0;
-			img {
-				margin-right: 12px;
+		.carousel_left {
+			display: inline-block;
+			.carousel_image {
 				width: 340px;
 				height: 200px;
+				img {
+					margin-right: 12px;
+					width: 340px;
+					height: 200px;
+				}
 			}
 		}
 
-		.carousel_text {
+		.carousel_right {
 			width: 584px;
+			display: inline-block;
 			padding: 12px;
-		}
+			position: relative;
+			height: 212px;
+			vertical-align: top;
 
-		.carousel_prompt {
-			position: absolute;
-			bottom: 24px;
-			right: 228px;
-		}
 
-		.large_button img {
-			width: 144px;
-			height: 36px;
-			position: absolute;
-			bottom: 36px;
-			right: 24px;
+			.carousel_text {
+				overflow: hidden;
+				height: 108px;
+			}
+
+			.carousel_prompt {
+				bottom: 12px;
+				position: absolute;
+			}
+
+			.large_button img {
+				width: 144px;
+				height: 36px;
+				bottom: 12px;
+				position: absolute;
+				right: 24px;
+			}
 		}
 	}
-
-
-	
-
-
 
 
 // ***************************************************************************************************

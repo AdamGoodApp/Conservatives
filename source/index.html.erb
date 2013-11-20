@@ -1,23 +1,30 @@
 ---
 facebook_url: "https://conservatives.com"
-title: Home
+title: 
 ---
 
 
 <div class="carousel">
+
 	<p class="subtitle">A tax cut for 25M people</p>
-	<div class="carousel_image">
-		<%= image_tag "#" %>
+	<div class="carousel_left">
+		<div class="carousel_image">
+			<%= image_tag "#" %>
+		</div>
 	</div>
-	<div class="carousel_text">
-		<p>
-		<%= lorem.paragraph %>
-		</p>
+
+	<div class="carousel_right">
+		<div class="carousel_text">
+			<p>
+			<%= lorem.paragraphs 5 %>
+			</p>
+		</div>
+		<p class="subtitle carousel_prompt">See how the tax cut will affect you</p>
+		<div class="button large_button">
+			<%= image_tag "#" %>
+		</div>
 	</div>
-	<p class="subtitle carousel_prompt">See how the tax cut will affect you</p>
-	<div class="button large_button">
-		<%= image_tag "#" %>
-	</div>
+
 </div>
 
 
