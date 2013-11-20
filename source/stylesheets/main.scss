@@ -277,7 +277,18 @@ body {
 	// YOUR TEAM RESPONSE 
 	// ******
 
+	.response_left {
+		margin-right: 34px;
+		vertical-align: top;
+	}
 
+	.response_right {
+		width: 600px;
+	}
+
+	.response_left, .response_right {
+		display: inline-block;
+	}
 
 
 // ***************************************************************************************************
@@ -309,6 +320,7 @@ body {
 		margin-right: 12px !important;
 	}
 
+<<<<<<< HEAD
 	// *********
 	// HOMEPAGE
 	// *********
@@ -326,6 +338,23 @@ body {
 		}
 	}
 
+=======
+
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 400px;
+	}
+
+	.response_left {
+		vertical-align: top;
+	}
+
+
+
+>>>>>>> 3b0b38ed05ce03d1358700cb4af8d9d2d2584731
 }
 
 // ***************************************************************************************************
@@ -354,6 +383,7 @@ body {
 		margin-right: 12px !important;
 	}
 
+<<<<<<< HEAD
 	// *********
 	// HOMEPAGE
 	// *********
@@ -387,6 +417,16 @@ body {
 	}
 
 
+=======
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 594px;
+	}
+
+>>>>>>> 3b0b38ed05ce03d1358700cb4af8d9d2d2584731
 }
 
 // ***************************************************************************************************
@@ -414,7 +454,6 @@ body {
 	.box1, .box3, .box5 {
 		margin-right: 12px !important;
 	}
-
 
 	// *********
 	// HOMEPAGE
@@ -448,6 +487,14 @@ body {
 
 	.bottom_home_share {
 		width: 416px !important;
+
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 412px;
+
 	}
 
 }
@@ -478,6 +525,7 @@ body {
 		margin-right: 12px !important;
 	}
 
+<<<<<<< HEAD
 
 	// *********
 	// HOMEPAGE
@@ -496,6 +544,14 @@ body {
 	.bottom_home_share {
 		width: 277px !important;
 		margin-bottom: 24px;
+=======
+	// ***********
+	// YOUR TEAM RESPONSE
+	// ***********
+
+	.response_right {
+		width: 272px;
+>>>>>>> 3b0b38ed05ce03d1358700cb4af8d9d2d2584731
 	}
 
 }
