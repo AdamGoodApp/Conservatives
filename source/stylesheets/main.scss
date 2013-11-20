@@ -10,7 +10,7 @@ body {
 	.container {
 		width: 960px;
 		margin: auto !important;
-		font-size: $global-font-size;
+		font-size: $global_font_size;
 
 		.logo {
 		margin: 20px 0;
@@ -53,7 +53,7 @@ body {
 		}
 	}	
 }
-
+ 
 // ***************************************************************************************************
 
 
@@ -76,7 +76,7 @@ body {
 .volunteer_bottom,
 .donate {
 	margin-bottom: 12px;
-	width: $div-full;
+	width: $div_full;
 	background-color: #999999;
 	height: 300px;
 	clear: both;
@@ -113,7 +113,7 @@ body {
 	float: left;
 	background-color: #333333;
 	height: 300px;
-	width: $div-third;
+	width: $div_third;
 	margin-bottom: 12px;
 }
 
@@ -130,6 +130,55 @@ body {
 // *********
 // INNER DIV STRUCTURES
 // *********
+
+.subtitle {
+	font-size: $subtitle_font_size;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+	// ******
+	// HOME PAGE 
+	// ******
+	
+	.carousel {
+		padding: 12px;
+		position: relative;
+
+		.carousel_image {
+			width: 340px;
+			height: 200px;
+			margin: 0;
+			img {
+				margin-right: 12px;
+				width: 340px;
+				height: 200px;
+			}
+		}
+
+		.carousel_text {
+			width: 584px;
+			padding: 12px;
+		}
+
+		.carousel_prompt {
+			position: absolute;
+			bottom: 24px;
+			right: 228px;
+		}
+
+		.large_button img {
+			width: 144px;
+			height: 36px;
+			position: absolute;
+			bottom: 36px;
+			right: 24px;
+		}
+	}
+
+
+	
+
 
 
 
