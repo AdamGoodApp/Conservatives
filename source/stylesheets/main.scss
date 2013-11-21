@@ -145,7 +145,7 @@ body {
 	}
 }
 
-.subtext {
+.subtext { 
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 }
@@ -200,6 +200,30 @@ body {
 			padding: 12px;
 			position: relative;
 		}
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+			.mp_picture {
+				width: 130px;
+				background-color: #ffffff;
+				height: 168px;
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 12px 12px 0;
+			}
+
+			.localteam_right {
+				width: 130px;
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+				height: 168px;
+				.findoutmore {
+					bottom: 0;
+					right: 0;
+				}
+			}
 
 
 // *********************************************************************************************
@@ -297,7 +321,7 @@ body {
 // *********************************************************************************************
 
 // ******
-// YOUR TEAM RESPONSE 
+// DAVID CAMERON 
 // ******
 
 	.response_left {
@@ -312,32 +336,6 @@ body {
 	.response_left, .response_right {
 		display: inline-block;
 	}
-// *********************************************************************************************
-
-// ******
-// YOUR TEAM RESPONSE 
-// ******
-	.mp_picture {
-		width: 130px;
-		background-color: #ffffff;
-		height: 168px;
-		display: inline-block;
-		vertical-align: top;
-		margin: 0 12px 12px 0;
-	}
-
-	.localteam_right {
-		width: 130px;
-		display: inline-block;
-		vertical-align: top;
-		position: relative;
-		height: 168px;
-		.findoutmore {
-			bottom: 0;
-			right: 0;
-		}
-	}
-
 
 // *********************************************************************************************
 
@@ -474,8 +472,21 @@ body {
 		}
 	}
 
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 164px;
+			}
+
+			.localteam_right {
+				width: 165px;
+			}
+
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
@@ -570,8 +581,21 @@ body {
 		width: 488px !important;
 	}
 
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 132px;
+			}
+
+			.localteam_right {
+				width: 132px;
+			}
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
@@ -662,8 +686,21 @@ body {
 	.bottom_home_share {
 		width: 416px !important;
 	}
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 200px;
+			}
+
+			.localteam_right {
+				width: 200px;
+			}
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
@@ -741,8 +778,20 @@ body {
 		margin-bottom: 24px;
 	}
 
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 130px;
+			}
+
+			.localteam_right {
+				width: 130px;
+			}
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
