@@ -1,0 +1,41 @@
+nav {
+  display: block;
+  margin: 2em 0;
+}
+nav strong {
+  background: #ccc;
+	display: block;
+	color: #AC121D;
+	font-size: 1.6em;
+  text-align: center;
+}
+nav strong:hover {
+	cursor: pointer;
+  background: #efefef;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li a:link, nav ul li a:visited {
+  display: block;
+  padding: .36em 0;
+  background: #efefef;
+  text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+  background-color: #dddddd !important;
+}
+@media (min-width: 480px) {
+  nav ul {
+    text-align: center;
+    background: #efefef;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a:link {
+    display: inline-block;
+    padding: 1em;
+  }
+}
