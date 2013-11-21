@@ -424,6 +424,24 @@ a img {
 		font-style: italic;
 	}
 
+	// ******
+	// YOUR LOCAL TEAM
+	// ******
+
+	.yourteam_response_content {
+		position: relative;
+	}
+
+	.lcoal_response_left, .local_response_right {
+		display: inline-block;
+	}
+
+	.local_response_right {
+		width: 659px;
+		vertical-align: top;
+		margin-top: 24px;
+	}
+
 // *********************************************************************************************
 
 	// ******
@@ -575,7 +593,7 @@ a img {
 	}
 
 		// ******
-		// YOUR LOCAL TEAM 
+		// YOUR LOCAL TEAM PARTIAL
 		// ******
 
 			.mp_picture {
@@ -647,6 +665,15 @@ a img {
 
 	.sharethefacts_image {
 		width: 724px !important;
+	}
+
+
+	// ***********
+	// YOUR LOCAL TEAM
+	// ***********
+
+	.local_response_right {
+		width: 468px;
 	}
 
 
@@ -919,6 +946,19 @@ a img {
 		width: 416px !important;
 	}
 
+	// ***********
+	// YOUR LOCAL TEAM
+	// ***********
+
+	.local_response_right {
+		width: 412px;
+	}
+
+	.yourteam_response_content {
+		padding-bottom: 36px;
+	}
+
+
 }
 
 // ***************************************************************************************************
@@ -1033,6 +1073,18 @@ a img {
 
 	.share_infographics, .sharethefacts_image {
 		width: 277px !important;
+	}
+
+	// ***********
+	// YOUR LOCAL TEAM
+	// ***********
+
+	.local_response_right {
+		width: 288px;
+	}
+
+	.yourteam_response_content {
+		padding-bottom: 36px;
 	}
 
 }
