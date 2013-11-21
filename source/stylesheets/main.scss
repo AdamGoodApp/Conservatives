@@ -155,8 +155,8 @@ body {
 		// SHARE 
 		// ******
 
-		.sharepage {
-			padding: 36px 0px 0px 12px;
+		.share_content {
+			margin-top: 12px;
 		}
 
 		.sharepage_subtitle, .social_icons {
@@ -173,6 +173,10 @@ body {
 
 		.sharepage_subtitle {
 			margin-right: 48px;
+		}
+
+		.social_icons {
+			vertical-align: middle;
 		}
 
 		.twitter_icon {
@@ -328,14 +332,6 @@ body {
 	.volunteer_right {
 		width: 542px;
 		padding-bottom: 62px;
-	}
-
-	.donatejoin_grey {
-		background-color: #dddddd;
-		width: 302px;
-		height: 36px;
-		bottom: 0;
-		position: absolute;
 	}
 
 
