@@ -427,6 +427,29 @@ body {
 		vertical-align: top;
 	}
 
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 231px !important;
+			height: 60px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 231px;
+		}	
+	}
+
+	.share_infographics {
+		width: 231px;
+	}
+
+
 
 }
 
@@ -495,6 +518,29 @@ body {
 	.response_right {
 		width: 594px;
 	}
+
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 188px !important;
+			height: 72px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 188px;
+		}	
+	}
+
+	.share_infographics {
+		width: 188px;
+	}
+
 
 }
 
@@ -566,6 +612,28 @@ body {
 
 	}
 
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 416px !important;
+			height: 36px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 416px;
+		}	
+	}
+
+	.share_infographics {
+		width: 416px;
+	}
+
 }
 
 // ***************************************************************************************************
@@ -620,6 +688,28 @@ body {
 
 	.response_right {
 		width: 272px;
+	}
+
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 277px !important;
+			height: 36px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 277px;
+		}	
+	}
+
+	.share_infographics {
+		width: 277px;
 	}
 
 }
