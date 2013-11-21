@@ -78,7 +78,7 @@ body {
 .yourteam_bottom,
 .signup, 
 .sharepage {
-	height: 100px;
+	// height: 100px;
 }
 
 .campaigns_top,
@@ -86,7 +86,7 @@ body {
 .campaigns_lowermiddle,
 .campaigns_bottom,
 .sharethefacts_home {
-	height: 200px;
+	// height: 200px;
 }
 
 
@@ -195,12 +195,13 @@ body {
 
 // *********************************************************************************************
 
-	// ******
-	// HOME PAGE 
-	// ******
+// ******
+// HOME PAGE 
+// ******
 	
 	.carousel {
 		padding: 12px;
+		position: relative;
 
 		.carousel_left {
 			display: inline-block;
@@ -218,28 +219,24 @@ body {
 		.carousel_right {
 			width: 584px;
 			display: inline-block;
-			padding: 12px;
-			position: relative;
-			height: 212px;
+			padding: 0 12px;
 			vertical-align: top;
 
-
 			.carousel_text {
-				overflow: hidden;
-				height: 108px;
+				height: 120px;
 			}
 
 			.carousel_prompt {
-				bottom: 12px;
+				bottom: 0;
 				position: absolute;
 			}
 
 			.large_button img {
 				width: 144px;
 				height: 36px;
-				bottom: 12px;
+				bottom: 0;
 				position: absolute;
-				right: 24px;
+				right: 0;
 			}
 		}
 	}
@@ -276,9 +273,9 @@ body {
 
 // *********************************************************************************************
 
-	// ******
-	// YOUR TEAM RESPONSE 
-	// ******
+// ******
+// YOUR TEAM RESPONSE 
+// ******
 
 	.response_left {
 		margin-right: 34px;
@@ -322,11 +319,67 @@ body {
 
 // ***************************************************************************************************
 
+// ******
+// CAMPAIGNS
+// ******
+
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			display: inline-block;
+			background-color: #ffffff;
+			margin: 0 12px 12px 0;
+			padding: 12px;
+			width: 302px;
+			height: 36px;
+			text-align: center;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 302px;
+			height: 180px;
+			background-color: #ffffff;
+			margin: 0 12px 12px 0;
+			display: inline-block;
+			position: relative;
+		}	
+	}
+
+	.seven_pages3, .seven_pages6, .infographic3, .video3 {
+		margin-right: 0;
+	}
+
+	.share_infographics {
+		background-color: #dddddd;
+		width: 302px;
+		height: 36px;
+		bottom: 0;
+		position: absolute;
+		.social_infographic1, .social_infographic2 {
+			position: absolute;
+			bottom: 0;
+			display: inline-block;
+			margin: 0;
+			right: 108px;
+		}
+		.social_infographic2 {
+			right: 12px;
+		}
+	}
+
+// ***************************************************************************************************
+
 // ***********
 // MEDIA QUERIES
 // ***********
 
 @media (max-width: 768px) {
+
+	.container {
+		width: 748px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -345,6 +398,22 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_right {
+		width: 380px !important;
+		.carousel_prompt {
+			width: 25%;
+		}
+	}
+
+	.box_image {
+		img {
+			width: 344px !important;
+		}
+	}
 
 	// ***********
 	// YOUR TEAM RESPONSE
@@ -359,13 +428,16 @@ body {
 	}
 
 
-
 }
 
 // ***************************************************************************************************
 
 
 @media (max-width: 640px) {
+
+	.container {
+		width: 620px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -384,6 +456,38 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_left {
+		width: 292px !important;
+		.carousel_image {
+				width: 292px !important;
+				img {
+					width: 292px !important;
+				}
+			}
+	}
+
+	.carousel_right {
+		width: 292px !important;
+		.carousel_prompt {
+			width: 134px !important;
+		}
+	}
+
+
+	.box_image {
+		img {
+			width: 280px !important;
+		}
+	}
+
+	.bottom_home_share {
+		width: 488px !important;
+	}
+
 	// ***********
 	// YOUR TEAM RESPONSE
 	// ***********
@@ -398,6 +502,10 @@ body {
 
 
 @media (max-width: 480px) {
+
+	.container {
+		width: 440px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -416,12 +524,46 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_left {
+		width: 100% !important;
+		.carousel_image {
+				width: 100% !important;
+				img {
+					width: 100% !important;
+				}
+			}
+	}
+
+	.carousel_right {
+		padding: 0 !important;
+		width: 100% !important;
+		.carousel_prompt {
+			width: 50% !important;
+			position: relative !important;
+			padding: 0;
+		}
+	}
+
+	.box_image {
+		img {
+			width: 416px !important;
+		}
+	}
+
+	.bottom_home_share {
+		width: 416px !important;
+	}
 	// ***********
 	// YOUR TEAM RESPONSE
 	// ***********
 
 	.response_right {
 		width: 412px;
+
 	}
 
 }
@@ -430,6 +572,10 @@ body {
 
 
 @media (max-width: 320px) {
+
+	.container {
+		width: 300px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -446,6 +592,26 @@ body {
 
 	.box1, .box3, .box5 {
 		margin-right: 12px !important;
+	}
+
+
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_prompt {
+		margin-top: 12px !important;
+	}
+
+	.box_image {
+		img {
+			width: 277px !important;
+		}
+	}
+
+	.bottom_home_share {
+		width: 277px !important;
+		margin-bottom: 24px;
 	}
 
 	// ***********
