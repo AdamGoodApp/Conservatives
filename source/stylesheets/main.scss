@@ -78,7 +78,7 @@ body {
 .yourteam_bottom,
 .signup, 
 .sharepage {
-	height: 100px;
+	// height: 100px;
 }
 
 .campaigns_top,
@@ -86,7 +86,7 @@ body {
 .campaigns_lowermiddle,
 .campaigns_bottom,
 .sharethefacts_home {
-	height: 200px;
+	// height: 200px;
 }
 
 
@@ -273,9 +273,9 @@ body {
 
 // *********************************************************************************************
 
-	// ******
-	// YOUR TEAM RESPONSE 
-	// ******
+// ******
+// YOUR TEAM RESPONSE 
+// ******
 
 	.response_left {
 		margin-right: 34px;
@@ -290,6 +290,58 @@ body {
 		display: inline-block;
 	}
 
+
+// ***************************************************************************************************
+
+// ******
+// CAMPAIGNS
+// ******
+
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			display: inline-block;
+			background-color: #ffffff;
+			margin: 0 12px 12px 0;
+			padding: 12px;
+			width: 302px;
+			height: 36px;
+			text-align: center;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 302px;
+			height: 180px;
+			background-color: #ffffff;
+			margin: 0 12px 12px 0;
+			display: inline-block;
+			position: relative;
+		}	
+	}
+
+	.seven_pages3, .seven_pages6, .infographic3, .video3 {
+		margin-right: 0;
+	}
+
+	.share_infographics {
+		background-color: #dddddd;
+		width: 302px;
+		height: 36px;
+		bottom: 0;
+		position: absolute;
+		.social_infographic1, .social_infographic2 {
+			position: absolute;
+			bottom: 0;
+			display: inline-block;
+			margin: 0;
+			right: 108px;
+		}
+		.social_infographic2 {
+			right: 12px;
+		}
+	}
 
 // ***************************************************************************************************
 
