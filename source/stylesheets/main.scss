@@ -294,6 +294,32 @@ body {
 	}
 
 
+
+// *********************************************************************************************
+
+	// ******
+	// VOLUNTEER 
+	// ******
+
+	.volunteer_top {
+		position: relative;
+	}
+
+	.volunteer_left, .volunteer_right, .form_left, .form_right {
+		display: inline-block;
+	}
+
+	.volunteer_left { 
+		vertical-align: top;
+		margin-right: 24px;
+	}
+
+	.volunteer_right {
+		width: 542px;
+		padding-bottom: 62px;
+	}
+
+
 // ***************************************************************************************************
 
 // ***********
