@@ -121,6 +121,10 @@ body {
 // INNER DIV STRUCTURES
 // *********
 
+.title > h1 {
+	text-transform: uppercase;
+}
+
 .subtitle {
 	font-size: $subtitle_font_size;
 	text-transform: uppercase;
@@ -401,6 +405,10 @@ body {
 		}	
 	}
 
+	.video1, .video2, .video3 {
+		margin-bottom: 48px;
+	}
+
 	.seven_pages3, .seven_pages6, .infographic3, .video3 {
 		margin-right: 0;
 	}
@@ -421,6 +429,17 @@ body {
 		.social_infographic2 {
 			right: 12px;
 		}
+	}
+
+	.campaigns_bottom, .campaigns_uppermiddle {
+		position: relative;
+	}
+
+	.sharethefacts_image {
+		width: 936px;
+		background-color: #ffffff;
+		height: 144px;
+		margin-bottom: 48px;
 	}
 
 
@@ -526,6 +545,10 @@ body {
 
 	.share_infographics {
 		width: 231px;
+	}
+
+	.sharethefacts_image {
+		width: 724px !important;
 	}
 
 
@@ -637,6 +660,9 @@ body {
 		width: 188px;
 	}
 
+	.sharethefacts_image {
+		width: 596px !important;
+	}
 
 }
 
@@ -739,8 +765,8 @@ body {
 		}	
 	}
 
-	.share_infographics {
-		width: 416px;
+	.share_infographics, .sharethefacts_image  {
+		width: 416px !important;
 	}
 
 }
@@ -825,12 +851,12 @@ body {
 
 	@each $i in $infographics_videos {
 	    .#{$i} {
-			width: 277px;
+			width: 277px !important;
 		}	
 	}
 
-	.share_infographics {
-		width: 277px;
+	.share_infographics, .sharethefacts_image {
+		width: 277px !important;
 	}
 
 }
