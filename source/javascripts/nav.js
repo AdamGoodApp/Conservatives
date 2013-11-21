@@ -1,5 +1,6 @@
-//toggle menu view   
-$(function() {
+$.noConflict();
+jQuery( document ).ready(function( $ ) {
+
     if ($(window).width() > 480) {
         $('nav strong').css('display','none');
         $('nav ul').show();
@@ -27,3 +28,6 @@ $("nav strong").click(function(e){
     $("nav ul").slideToggle("fast");   
       return false;
 });
+
+
+console.log("HII ADAM")
