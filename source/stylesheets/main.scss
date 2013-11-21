@@ -144,6 +144,11 @@ body {
 		height: 36px;
 	}
 }
+
+.subtext {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
 	
 // ************************************************************************
 
@@ -307,7 +312,31 @@ body {
 	.response_left, .response_right {
 		display: inline-block;
 	}
+// *********************************************************************************************
 
+// ******
+// YOUR TEAM RESPONSE 
+// ******
+	.mp_picture {
+		width: 130px;
+		background-color: #ffffff;
+		height: 168px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 12px 12px 0;
+	}
+
+	.localteam_right {
+		width: 130px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		height: 168px;
+		.findoutmore {
+			bottom: 0;
+			right: 0;
+		}
+	}
 
 
 // *********************************************************************************************
