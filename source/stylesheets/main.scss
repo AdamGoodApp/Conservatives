@@ -325,16 +325,25 @@ body {
 // ******
 
 	.response_left {
-		margin-right: 34px;
 		vertical-align: top;
 	}
 
 	.response_right {
-		width: 600px;
+		width: 659px;
 	}
 
 	.response_left, .response_right {
 		display: inline-block;
+	}
+
+	.signup_davidcameron {
+		background-color: grey;
+		padding: 12px 12px 12px 12px;
+		position: relative;
+	}
+
+	.social_davidcameron {
+		margin-top: 12px;
 	}
 
 // *********************************************************************************************
@@ -490,7 +499,7 @@ body {
 	// ***********
 
 	.response_right {
-		width: 400px;
+		width: 447px;
 	}
 
 	.response_left {
@@ -600,6 +609,10 @@ body {
 
 	.response_right {
 		width: 594px;
+	}
+
+	.signup_davidcameron {
+		padding-bottom: 62px;
 	}
 
 	// ***********
