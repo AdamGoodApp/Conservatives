@@ -446,6 +446,13 @@ a img {
 		margin-top: 24px;
 	}
 
+	.localteam_image, .localteam_image img  {
+		height: 250px;
+		width: 250px;
+		margin-right: 12px;
+	}
+
+
 // ***************************************************************************************************
 
 // ******
@@ -718,7 +725,7 @@ a img {
 	// ***********
 
 	.local_response_right {
-		width: 468px;
+		width: 459px;
 	}
 
 
@@ -884,6 +891,15 @@ a img {
 	}
 
 	.volunteer_right {
+		width: 596px;
+	}
+
+	// ***********
+	// YOUR LOCAL TEAM
+	// ***********
+
+	.localteam_image, .localteam_image img  {
+		height: 250px;
 		width: 596px;
 	}
 
@@ -1055,6 +1071,11 @@ a img {
 		padding-bottom: 36px;
 	}
 
+	.localteam_image, .localteam_image img  {
+		height: 250px;
+		width: 415px;
+	}
+
 
 }
 
@@ -1207,6 +1228,11 @@ a img {
 
 	.yourteam_response_content {
 		padding-bottom: 36px;
+	}
+
+	.localteam_image, .localteam_image img  {
+		height: 250px;
+		width: 276px;
 	}
 
 }
