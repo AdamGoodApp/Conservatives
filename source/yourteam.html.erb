@@ -5,10 +5,46 @@ title: Your team
 
 
 <%= partial "signup" %>
-<div class="yourteam_top">
+<div class="yourteam_david">
+
+	<p class="subtitle">
+		David Cameron
+	</p>
+
+	<div class="david_image">
+    <%= link_to "#{image_tag("")}","" %>
+  </div>
+
+	<div class="david_right">
+		<p><%= lorem.sentence %></p>
+		<p><%= lorem.sentence %></p>
+
+		<div class="social_davidcameron">
+
+	  	<div class="facebook_icon">
+	  		<div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button"></div>
+	  	</div>
+
+	  	<div class="twitter_icon">
+	  		<a href="https://twitter.com/share" class="twitter-share-button" data-via="conservatives">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	  	</div>
+
+	  	<div class="google_icon">
+	  		<div class="g-plus" data-action="share" data-annotation="none"></div>
+	  	</div>
+
+  	</div>
+		
+		<div class="button">
+			<%= image_tag "#" %>
+		</div>
+			
+	</div>
 </div>
 
-  <div class="box1">
+
+  <div class="box1 yourteam_box">
     <div class="local_team">
       <p class="subtitle">Your Local Team</p>
       <p class="subtext">Enter your postcode to find out more about your local team</p>
@@ -21,7 +57,7 @@ title: Your team
     </div>
 	</div>
 
-	<div class="box2">
+	<div class="box2 yourteam_box">
     <p class="subtitle">List of MPs & Candidates</p>
     <ul>
     	<li class="subtext"><%= link_to "Members of Parliament", "" %>
@@ -29,12 +65,12 @@ title: Your team
     	<li class="subtext"><%= link_to "Parliamentary Candidates", "" %>
     	</li>
   	</ul>
-    <div class="box_image">
+    <div class="list_mps_image">
       <%= link_to "#{image_tag("")}","http://incometaxcut.conservatives.com/" %>
    	</div>
   </div>
 
-	<div class="box3">
+	<div class="box3 yourteam_box">
     <p class="subtitle">Find your other representatives</p>
     <ul>
     	<li class="subtext"><%= link_to "Members of the House of Lords", "" %>
@@ -48,11 +84,9 @@ title: Your team
     	<li class="subtext"><%= link_to "Members of the London Assembly", "" %>
     	</li>
   	</ul>
-    <div class="representative_image"><%= image_tag "#" %></div>
-    <div class="button">
-      <%= link_to "#{image_tag("")}","/campaigns.html" %>
+    <div class="representative_image">
+    	<%= image_tag "#" %>
     </div>
 	</div>
-
 
 <%= partial "share_this_page" %>

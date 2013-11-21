@@ -134,6 +134,11 @@ body {
 	padding-bottom: 12px;
 }
 
+.subtext, p { 
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
 .button {
 	width: 96px;
 	height: 36px;
@@ -149,9 +154,13 @@ body {
 	}
 }
 
-.subtext { 
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+a {
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+
+a img {
+	border: none;
 }
 	
 // ************************************************************************
@@ -330,11 +339,46 @@ body {
 		height: 96px;
 		width: 288px;
 		background-color: #333333;
+		position: absolute;
+		bottom: 12px;
 		img {
 			height: 96px;
 			width: 288px;
 		}
 	}
+
+	.list_mps_image {
+		height: 240px;
+		width: 288px;
+		background-color: #333333;
+		position: absolute;
+		bottom: 12px;
+		img {
+			height: 240px;
+			width: 288px;
+		}
+	}
+	
+	.yourteam_david {
+		position: relative;
+		.david_image {
+		padding-bottom: 12px;
+		bottom: 48px;
+		display: inline-block;
+		margin-right: 12px;
+			img {
+				width: 624px;
+				height: 240px;
+				background-color: #333333;
+			}
+		}
+		.david_right {
+			width: 297px;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	
 
 
 	// ******
@@ -542,6 +586,30 @@ body {
 				width: 165px;
 			}
 
+	// ******
+	// YOUR TEAM 
+	// ******
+
+	.david_image {
+		width: 724px;
+		img {
+			width: 724px !important;
+		}
+	}
+
+	.david_right {
+		width: 724px !important;
+	}
+
+	.representative_image, .list_mps_image {
+		width: 342px;
+		img {
+			width: 342px !important;
+		}
+	}
+	
+	
+
 
 	// ***********
 	// DAVID CAMERON
@@ -656,6 +724,32 @@ body {
 				width: 132px;
 			}
 
+	// ******
+	// YOUR TEAM 
+	// ******	
+
+	.david_image {
+		width: 596px;
+		img {
+			width: 596px !important;
+		}
+	}
+
+	.david_right {
+		width: 596px !important;
+	}
+
+	.yourteam_box {
+		width: 620px !important;
+	}
+
+	.representative_image, .list_mps_image {
+		width: 596px;
+		img {
+			width: 596px !important;
+		}
+	}
+	
 	// ***********
 	// DAVID CAMERON
 	// ***********
@@ -768,6 +862,32 @@ body {
 				width: 200px;
 			}
 
+	// ******
+	// YOUR TEAM 
+	// ******	
+
+	.david_image {
+		width: 416px;
+		img {
+			width: 416px !important;
+		}
+	}
+
+	.david_right {
+		width: 416px !important;
+	}
+
+	.yourteam_box {
+		width: 440px !important;
+	}
+
+	.representative_image, .list_mps_image {
+		width: 416px;
+		img {
+			width: 416px !important;
+		}
+	}
+
 	// ***********
 	// DAVID CAMERON
 	// ***********
@@ -858,6 +978,32 @@ body {
 			.localteam_right {
 				width: 130px;
 			}
+
+	// ******
+	// YOUR TEAM 
+	// ******	
+
+	.david_image {
+		width: 276px;
+		img {
+			width: 276px !important;
+		}
+	}
+
+	.david_right {
+		width: 276px !important;
+	}
+
+	.yourteam_box {
+		width: 300px !important;
+	}
+
+	.representative_image, .list_mps_image {
+		width: 276px;
+		img {
+			width: 276px !important;
+		}
+	}
 
 	// ***********
 	// DAVID CAMERON
