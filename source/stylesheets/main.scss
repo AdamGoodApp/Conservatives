@@ -78,7 +78,7 @@ body {
 .yourteam_bottom,
 .signup, 
 .sharepage {
-	height: 100px;
+	// height: 100px;
 }
 
 .campaigns_top,
@@ -86,7 +86,7 @@ body {
 .campaigns_lowermiddle,
 .campaigns_bottom,
 .sharethefacts_home {
-	height: 200px;
+	// height: 200px;
 }
 
 
@@ -144,6 +144,11 @@ body {
 		height: 36px;
 	}
 }
+
+.subtext { 
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
 	
 // ************************************************************************
 
@@ -155,8 +160,8 @@ body {
 		// SHARE 
 		// ******
 
-		.sharepage {
-			padding: 36px 0px 0px 12px;
+		.share_content {
+			margin-top: 12px;
 		}
 
 		.sharepage_subtitle, .social_icons {
@@ -173,6 +178,10 @@ body {
 
 		.sharepage_subtitle {
 			margin-right: 48px;
+		}
+
+		.social_icons {
+			vertical-align: middle;
 		}
 
 		.twitter_icon {
@@ -192,15 +201,40 @@ body {
 			position: relative;
 		}
 
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+			.mp_picture {
+				width: 130px;
+				background-color: #ffffff;
+				height: 168px;
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 12px 12px 0;
+			}
+
+			.localteam_right {
+				width: 130px;
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+				height: 168px;
+				.findoutmore {
+					bottom: 0;
+					right: 0;
+				}
+			}
+
 
 // *********************************************************************************************
 
-	// ******
-	// HOME PAGE 
-	// ******
+// ******
+// HOME PAGE 
+// ******
 	
 	.carousel {
 		padding: 12px;
+		position: relative;
 
 		.carousel_left {
 			display: inline-block;
@@ -218,28 +252,24 @@ body {
 		.carousel_right {
 			width: 584px;
 			display: inline-block;
-			padding: 12px;
-			position: relative;
-			height: 212px;
+			padding: 0 12px;
 			vertical-align: top;
 
-
 			.carousel_text {
-				overflow: hidden;
-				height: 108px;
+				height: 120px;
 			}
 
 			.carousel_prompt {
-				bottom: 12px;
+				bottom: 0;
 				position: absolute;
 			}
 
 			.large_button img {
 				width: 144px;
 				height: 36px;
-				bottom: 12px;
+				bottom: 0;
 				position: absolute;
-				right: 24px;
+				right: 0;
 			}
 		}
 	}
@@ -262,6 +292,20 @@ body {
 		}
 	}
 
+	// FOR SOCIAL LINKS ON DAVID CAMERON DIV
+
+	.home_dc1, .home_dc2 {
+		position: absolute;
+		bottom: 24px;
+		display: inline-block;
+		margin: 0;
+		left: 96px;
+	}
+
+	.home_dc2 {
+		left: 12px;
+	}
+
 	// SHARETHEFACTS_HOME
 
 	.sharethefacts_home {
@@ -276,9 +320,9 @@ body {
 
 // *********************************************************************************************
 
-	// ******
-	// YOUR TEAM RESPONSE 
-	// ******
+// ******
+// DAVID CAMERON 
+// ******
 
 	.response_left {
 		margin-right: 34px;
@@ -293,6 +337,94 @@ body {
 		display: inline-block;
 	}
 
+// *********************************************************************************************
+
+	// ******
+	// VOLUNTEER 
+	// ******
+
+	.volunteer_top {
+		position: relative;
+	}
+
+	.volunteer_left, .volunteer_right, .form_left, .form_right {
+		display: inline-block;
+	}
+
+	.volunteer_left { 
+		vertical-align: top;
+		margin-right: 24px;
+	}
+
+	.volunteer_right {
+		width: 542px;
+		padding-bottom: 62px;
+	}
+
+
+// ***************************************************************************************************
+
+// ******
+// CAMPAIGNS
+// ******
+
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			display: inline-block;
+			background-color: #ffffff;
+			margin: 0 12px 12px 0;
+			padding: 12px;
+			width: 302px;
+			height: 36px;
+			text-align: center;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 302px;
+			height: 180px;
+			background-color: #ffffff;
+			margin: 0 12px 12px 0;
+			display: inline-block;
+			position: relative;
+		}	
+	}
+
+	.seven_pages3, .seven_pages6, .infographic3, .video3 {
+		margin-right: 0;
+	}
+
+	.share_infographics {
+		background-color: #dddddd;
+		width: 302px;
+		height: 36px;
+		bottom: 0;
+		position: absolute;
+		.social_infographic1, .social_infographic2 {
+			position: absolute;
+			bottom: 0;
+			display: inline-block;
+			margin: 0;
+			right: 108px;
+		}
+		.social_infographic2 {
+			right: 12px;
+		}
+	}
+
+
+
+// ***************************************************************************************************
+
+// ******
+// DONATE
+// ******
+
+	.donate {
+		position: relative;
+	}
 
 // ***************************************************************************************************
 
@@ -301,6 +433,10 @@ body {
 // ***********
 
 @media (max-width: 768px) {
+
+	.container {
+		width: 748px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -319,9 +455,38 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_right {
+		width: 380px !important;
+		.carousel_prompt {
+			width: 25%;
+		}
+	}
+
+	.box_image {
+		img {
+			width: 344px !important;
+		}
+	}
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 164px;
+			}
+
+			.localteam_right {
+				width: 165px;
+			}
+
 
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
@@ -332,6 +497,28 @@ body {
 		vertical-align: top;
 	}
 
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 231px !important;
+			height: 60px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 231px;
+		}	
+	}
+
+	.share_infographics {
+		width: 231px;
+	}
+
 
 
 }
@@ -340,6 +527,10 @@ body {
 
 
 @media (max-width: 640px) {
+
+	.container {
+		width: 620px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -358,13 +549,81 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_left {
+		width: 292px !important;
+		.carousel_image {
+				width: 292px !important;
+				img {
+					width: 292px !important;
+				}
+			}
+	}
+
+	.carousel_right {
+		width: 292px !important;
+		.carousel_prompt {
+			width: 134px !important;
+		}
+	}
+
+
+	.box_image {
+		img {
+			width: 280px !important;
+		}
+	}
+
+	.bottom_home_share {
+		width: 488px !important;
+	}
+
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 132px;
+			}
+
+			.localteam_right {
+				width: 132px;
+			}
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
 		width: 594px;
 	}
+
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 188px !important;
+			height: 72px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 188px;
+		}	
+	}
+
+	.share_infographics {
+		width: 188px;
+	}
+
 
 }
 
@@ -372,6 +631,10 @@ body {
 
 
 @media (max-width: 480px) {
+
+	.container {
+		width: 440px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -390,12 +653,81 @@ body {
 		margin-right: 12px !important;
 	}
 
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_left {
+		width: 100% !important;
+		.carousel_image {
+				width: 100% !important;
+				img {
+					width: 100% !important;
+				}
+			}
+	}
+
+	.carousel_right {
+		padding: 0 !important;
+		width: 100% !important;
+		.carousel_prompt {
+			width: 50% !important;
+			position: relative !important;
+			padding: 0;
+		}
+	}
+
+	.box_image {
+		img {
+			width: 416px !important;
+		}
+	}
+
+	.bottom_home_share {
+		width: 416px !important;
+	}
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 200px;
+			}
+
+			.localteam_right {
+				width: 200px;
+			}
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
 		width: 412px;
+
+	}
+
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 416px !important;
+			height: 36px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 416px;
+		}	
+	}
+
+	.share_infographics {
+		width: 416px;
 	}
 
 }
@@ -404,6 +736,10 @@ body {
 
 
 @media (max-width: 320px) {
+
+	.container {
+		width: 300px !important;
+	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
@@ -422,12 +758,66 @@ body {
 		margin-right: 12px !important;
 	}
 
+
+	// *********
+	// HOMEPAGE
+	// *********
+
+	.carousel_prompt {
+		margin-top: 12px !important;
+	}
+
+	.box_image {
+		img {
+			width: 277px !important;
+		}
+	}
+
+	.bottom_home_share {
+		width: 277px !important;
+		margin-bottom: 24px;
+	}
+
+		// ******
+		// YOUR LOCAL TEAM 
+		// ******
+
+			.mp_picture {
+				width: 130px;
+			}
+
+			.localteam_right {
+				width: 130px;
+			}
+
 	// ***********
-	// YOUR TEAM RESPONSE
+	// DAVID CAMERON
 	// ***********
 
 	.response_right {
 		width: 272px;
+	}
+
+	// ***********
+	// CAMPAIGN
+	// ***********
+
+	@each $i in $sevenpages{
+	    .#{$i} {
+			width: 277px !important;
+			height: 36px;
+			vertical-align: top;
+		}
+	}
+
+	@each $i in $infographics_videos {
+	    .#{$i} {
+			width: 277px;
+		}	
+	}
+
+	.share_infographics {
+		width: 277px;
 	}
 
 }
