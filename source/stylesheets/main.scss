@@ -320,13 +320,26 @@ body {
 		color: #cccccc;
 	}
 
-
-
 // *********************************************************************************************
 
 // ******
-// DAVID CAMERON 
+// YOUR TEAM
 // ******
+	
+	.representative_image {
+		height: 96px;
+		width: 288px;
+		background-color: #333333;
+		img {
+			height: 96px;
+			width: 288px;
+		}
+	}
+
+
+	// ******
+	// DAVID CAMERON 
+	// ******
 
 	.response_left {
 		vertical-align: top;
@@ -340,14 +353,31 @@ body {
 		display: inline-block;
 	}
 
+
 	.signup_davidcameron {
-		background-color: grey;
+		background-color: #efefef;
 		padding: 12px 12px 12px 12px;
 		position: relative;
 	}
 
 	.social_davidcameron {
 		margin-top: 12px;
+	}
+
+	// ******
+	// MEMBERS OF PARLIAMENT
+	// ******
+
+	.list_of_members, .list_of_parliamentary_candidates {
+		width: 936px;
+		background-color: #ffffff;
+		height: 600px;
+		text-align: center;
+	}
+
+	.italic_list {
+		padding: 12px;
+		font-style: italic;
 	}
 
 // *********************************************************************************************
