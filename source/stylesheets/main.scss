@@ -134,9 +134,13 @@ body {
 	padding-bottom: 12px;
 }
 
-.subtext, p { 
+.subtext { 
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
+}
+
+p {
+	-webkit-margin-before: 0;
 }
 
 .button {
@@ -334,7 +338,7 @@ a img {
 // ******
 // YOUR TEAM
 // ******
-	
+
 	.representative_image {
 		height: 96px;
 		width: 288px;
@@ -626,6 +630,9 @@ a img {
 		}
 	}
 	
+	.list_of_parliamentary_candidates, .list_of_members {
+		width: 724px !important;
+	}
 	
 
 
@@ -776,6 +783,10 @@ a img {
 			width: 596px !important;
 		}
 	}
+
+	.list_of_parliamentary_candidates, .list_of_members {
+		width: 596px !important;
+	}
 	
 	// ***********
 	// DAVID CAMERON
@@ -915,6 +926,10 @@ a img {
 		}
 	}
 
+	.list_of_parliamentary_candidates, .list_of_members {
+		width: 416px !important;
+	}
+
 	// ***********
 	// DAVID CAMERON
 	// ***********
@@ -1044,6 +1059,11 @@ a img {
 			width: 276px !important;
 		}
 	}
+
+	.list_of_parliamentary_candidates, .list_of_members {
+		width: 276px !important;
+	}
+
 
 	// ***********
 	// DAVID CAMERON
