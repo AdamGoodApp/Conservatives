@@ -446,39 +446,6 @@ a img {
 		margin-top: 24px;
 	}
 
-// *********************************************************************************************
-
-	// ******
-	// VOLUNTEER 
-	// ******
-
-	.volunteer_top {
-		position: relative;
-	}
-
-	.volunteer_left, .volunteer_right, .form_left, .form_right {
-		display: inline-block;
-	}
-
-	.volunteer_left { 
-		vertical-align: top;
-		margin-right: 12px;
-		width: 336px;
-		height: 250px;
-		img {
-			width: 336px;
-			height: 250px;
-		}
-	}
-
-	.volunteer_right {
-		width: 585px;
-		padding-bottom: 62px;
-	}
-
-
-
-
 // ***************************************************************************************************
 
 // ******
@@ -556,6 +523,35 @@ a img {
 	}
 
 
+// *********************************************************************************************
+
+	// ******
+	// VOLUNTEER 
+	// ******
+
+	.volunteer_top {
+		position: relative;
+	}
+
+	.volunteer_left, .volunteer_right, .form_left, .form_right {
+		display: inline-block;
+	}
+
+	.volunteer_left { 
+		vertical-align: top;
+		margin-right: 12px;
+		width: 336px;
+		height: 250px;
+		img {
+			width: 336px;
+			height: 250px;
+		}
+	}
+
+	.volunteer_right {
+		width: 585px;
+		padding-bottom: 62px;
+	}
 
 // ***************************************************************************************************
 
@@ -630,14 +626,14 @@ a img {
 	// ******
 
 	.david_image {
-		width: 724px;
+		width: 354px;
 		img {
-			width: 724px !important;
+			width: 354px !important;
 		}
 	}
 
 	.david_right {
-		width: 724px !important;
+		width: 354px !important;
 	}
 
 	.representative_image, .list_mps_image {
