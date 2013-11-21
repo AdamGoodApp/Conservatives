@@ -121,6 +121,10 @@ body {
 // INNER DIV STRUCTURES
 // *********
 
+.title > h1 {
+	text-transform: uppercase;
+}
+
 .subtitle {
 	font-size: $subtitle_font_size;
 	text-transform: uppercase;
