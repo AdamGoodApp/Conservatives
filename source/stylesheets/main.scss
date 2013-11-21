@@ -13,7 +13,7 @@ body {
 		font-size: $global_font_size;
 
 		.logo {
-		margin: 20px 0;
+		margin: 12px 0;
 		width: 45%;
 		display: inline-block;
 		}
@@ -26,7 +26,7 @@ body {
 			float: right;
 			width: 300px;
 			height: 50px;
-			margin: 20px 0;
+			margin: 12px 0;
 			display: inline-block;
 			background-color: #efefef;
 
@@ -739,6 +739,18 @@ a img {
 
 	.container {
 		width: 620px !important;
+		.logo {
+			width: 620px !important;
+			img {
+				width: 620px !important;
+			}
+		}
+
+		.social_share {
+			width: 620px !important;
+			float: none !important;
+			margin-top: 0 !important;
+		}
 	}
 
 	@each $i in $fullpagedivs{
@@ -774,6 +786,10 @@ a img {
 
 	.carousel_right {
 		width: 292px !important;
+		.carousel_text {
+			max-height: 118px;
+			overflow: hidden;
+		}	
 		.carousel_prompt {
 			width: 134px !important;
 		}
@@ -913,6 +929,16 @@ a img {
 
 	.container {
 		width: 440px !important;
+		.logo {
+			width: 440px !important;
+			img {
+				width: 440px !important;
+			}
+		}
+
+		.social_share {
+			width: 440px !important;
+		}
 	}
 
 	@each $i in $fullpagedivs{
@@ -937,18 +963,19 @@ a img {
 	// *********
 
 	.carousel_left {
-		width: 100% !important;
+		width: 416px !important;
 		.carousel_image {
-				width: 100% !important;
+				width: 416px !important;
+				margin-bottom: 12px;
 				img {
-					width: 100% !important;
+					width: 416px !important;
 				}
 			}
 	}
 
 	.carousel_right {
 		padding: 0 !important;
-		width: 100% !important;
+		width: 416px !important;
 		.carousel_prompt {
 			width: 50% !important;
 			position: relative !important;
@@ -1086,6 +1113,16 @@ a img {
 
 	.container {
 		width: 300px !important;
+		.logo {
+			width: 300px !important;
+			img {
+				width: 300px !important;
+			}
+		}
+
+		.social_share {
+			width: 300px !important;
+		}
 	}
 
 	@each $i in $fullpagedivs{
