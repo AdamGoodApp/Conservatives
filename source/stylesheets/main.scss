@@ -341,18 +341,28 @@ body {
 	// DAVID CAMERON 
 	// ******
 
-		.response_left {
-			margin-right: 34px;
-			vertical-align: top;
-		}
+	.response_left {
+		vertical-align: top;
+	}
 
-		.response_right {
-			width: 600px;
-		}
+	.response_right {
+		width: 659px;
+	}
 
-		.response_left, .response_right {
-			display: inline-block;
-		}
+	.response_left, .response_right {
+		display: inline-block;
+	}
+
+
+	.signup_davidcameron {
+		background-color: #efefef;
+		padding: 12px 12px 12px 12px;
+		position: relative;
+	}
+
+	.social_davidcameron {
+		margin-top: 12px;
+	}
 
 	// ******
 	// MEMBERS OF PARLIAMENT
@@ -369,9 +379,6 @@ body {
 		padding: 12px;
 		font-style: italic;
 	}
-
-
-
 
 // *********************************************************************************************
 
@@ -541,7 +548,7 @@ body {
 	// ***********
 
 	.response_right {
-		width: 400px;
+		width: 447px;
 	}
 
 	.response_left {
@@ -655,6 +662,10 @@ body {
 
 	.response_right {
 		width: 594px;
+	}
+
+	.signup_davidcameron {
+		padding-bottom: 62px;
 	}
 
 	// ***********
