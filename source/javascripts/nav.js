@@ -1,6 +1,7 @@
 
-$( document ).ready(function() {
-    $(".nav_tab").on("click", function(){
-        $("nav ul").show()
-    })
-});
+// $( document ).ready(function() {
+//     $(".nav_tab").on("click", function(){
+//         $("nav ul").show()
+//     })
+// });
+
