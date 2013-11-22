@@ -28,6 +28,14 @@ body {
 			text-transform: uppercase;
 		}
 
+		.navbar-header {
+			text-align: center;
+			.navbar-toggle {
+				float: none;
+				border: none;
+			}
+		}
+
 		.social_share {
 			float: right;
 			width: 300px;
@@ -1160,8 +1168,27 @@ a img {
 	// HOMEPAGE
 	// *********
 
-	.carousel_prompt {
+	.carousel_left {
+		width: 276px !important;
+		.carousel_image {
+				width: 276px !important;
+				margin-bottom: 12px;
+				img {
+					width: 276px !important;
+				}
+			}
+		}
+	
+	.carousel_text {
+		width: 276px !important;
+	}	
+
+	.carousel_right	{
+		.carousel_prompt {
 		margin-top: 12px !important;
+		width: 276px !important;
+		padding-bottom: 48px !important;
+		}
 	}
 
 	.box_image {
