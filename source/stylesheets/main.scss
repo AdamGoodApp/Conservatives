@@ -546,12 +546,12 @@ a img {
 	}
 
 	.sharethefacts_image {
-		width: 936px;
+		width: 276px;
 		background-color: #ffffff;
 		height: 144px;
 		margin-bottom: 48px;
 		img {
-			width: 936px;
+			width: 276px;
 			height: 144px;
 		}
 	}
@@ -1131,7 +1131,7 @@ a img {
 	@each $i in $sevenpages{
 	    .#{$i} {
 			width: 350px !important;
-			height: 60px;
+			height: 48px;
 			vertical-align: top;
 			margin-right: 12px;
 		}
@@ -1370,9 +1370,14 @@ a img {
 	@each $i in $sevenpages{
 	    .#{$i} {
 			width: 295px !important;
-			height: 36px;
+			height: 36px !important;
 			vertical-align: top;
+			margin-right: 12px;
 		}
+	}
+
+	.seven_pages3, .seven_pages6 {
+		margin-right: 0 !important;
 	}
 
 	@each $i in $infographics_videos {
@@ -1388,6 +1393,22 @@ a img {
 	.share_infographics, .sharethefacts_image, .sharethefacts_image img  {
 		width: 295px !important;
 	}
+	
+	.sharethefacts_image {
+		width: 916px !important;
+		img {
+			width: 916px !important;
+		}
+	}
+
+	.infographic3, .video3 {
+		display: inline-block !important;
+	}
+
+	.infographic2, .infographic4, .video2 {
+		margin-right: 12px !important;
+	}
+
 
 
 	// ******
