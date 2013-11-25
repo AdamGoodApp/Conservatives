@@ -802,13 +802,6 @@ a img {
 				width: 620px !important;
 			}
 		}
-		.nav_tab {
-			display: block;
-		}
-
-		nav ul {
-			display: none;
-		}
 
 		.social_share {
 			width: 620px !important;
@@ -1354,7 +1347,44 @@ a img {
 
 }
 
+nav {
+	
+	li {
+		font-size: 15px;
+		display: inline-block;
+		margin-right: 12px;
+	}
 
+}
+
+.navigation_mobile {
+	display: none;
+}
+
+
+@media (max-width: 640px) {
+
+	.navigation_mobile {
+		display: block;
+		font-size: 32px;
+		background-color: #efefef;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	nav {
+	
+		li {
+			font-size: 15px;
+			display: block;
+		}
+
+	}
+
+
+}
 
 
 
