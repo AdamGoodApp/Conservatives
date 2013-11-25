@@ -8,7 +8,7 @@ body {
 	font-family: $font;
 	font-size: 100% !important;
 	.container {
-		width: 960px;
+		width: 300px;
 		margin: auto !important;
 		font-size: $global_font_size;
 
@@ -114,20 +114,14 @@ body {
 		float: left;
 		background-color: #777777;
 		height: 360px;
-		width: $div_third;
+		width: 300px;
 		margin-bottom: 12px;
 		padding: 12px;
 		position: relative;
+		margin-right: 12px;
 	}
 }
 
-.box1, 
-.box2, 
-.box4, 
-.box5 {
-	margin-right: 12px;
-	
-}
 
 // ***************************************************************************************************
 
@@ -270,30 +264,32 @@ a img {
 		.carousel_left {
 			display: inline-block;
 			.carousel_image {
-				width: 340px;
+				width: 276px;
 				height: 200px;
+				margin-bottom: 12px;
 				img {
 					margin-right: 12px;
-					width: 340px;
+					width: 276px;
 					height: 200px;
 				}
 			}
 		}
 
 		.carousel_right {
-			width: 584px;
+			width: 276px;
 			display: inline-block;
 			padding: 0 12px;
 			vertical-align: top;
 
 			.carousel_text {
 				height: 120px;
+				overflow: hidden;
 			}
-
+			
 			.carousel_prompt {
-				bottom: 0;
-				position: absolute;
+				margin-top: 12px;
 			}
+			
 
 			.large_button img {
 				width: 144px;
@@ -303,6 +299,11 @@ a img {
 				right: 0;
 			}
 		}
+	}
+
+	.bottom_home_share {
+		width: 277px;
+		margin-bottom: 24px;
 	}
 	
 	// SIX BOXES
@@ -317,7 +318,7 @@ a img {
 		position: absolute;
 		bottom: 48px;
 		img {
-			width: 288px;
+			width: 276px;
 			height: 180px;
 			background-color: #333333;
 		}
@@ -355,25 +356,25 @@ a img {
 
 	.representative_image {
 		height: 96px;
-		width: 288px;
+		width: 276px;
 		background-color: #333333;
 		position: absolute;
 		bottom: 12px;
 		img {
 			height: 96px;
-			width: 288px;
+			width: 276px;
 		}
 	}
 
 	.list_mps_image {
 		height: 240px;
-		width: 288px;
+		width: 276px;
 		background-color: #333333;
 		position: absolute;
 		bottom: 12px;
 		img {
 			height: 240px;
-			width: 288px;
+			width: 276px;
 		}
 	}
 	
@@ -385,13 +386,13 @@ a img {
 		display: inline-block;
 		margin-right: 12px;
 			img {
-				width: 624px;
+				width: 276px;
 				height: 240px;
 				background-color: #333333;
 			}
 		}
 		.david_right {
-			width: 297px;
+			width: 276px;
 			display: inline-block;
 			vertical-align: top;
 		}
@@ -408,11 +409,12 @@ a img {
 	}
 
 	.response_right {
-		width: 659px;
+		margin-top: 12px;
 	}
 
 	.response_left, .response_right {
 		display: inline-block;
+		width: 276px;
 	}
 
 
@@ -420,6 +422,7 @@ a img {
 		background-color: #efefef;
 		padding: 12px 12px 12px 12px;
 		position: relative;
+		margin-bottom: 12px;
 	}
 
 	.social_davidcameron {
@@ -430,8 +433,8 @@ a img {
 	// MEMBERS OF PARLIAMENT
 	// ******
 
-	.list_of_members, .list_of_parliamentary_candidates {
-		width: 936px;
+	.list_of_parliamentary_candidates, .list_of_members  {
+		width: 276px;
 		background-color: #ffffff;
 		height: 600px;
 		text-align: center;
@@ -450,21 +453,31 @@ a img {
 		position: relative;
 	}
 
-	.lcoal_response_left, .local_response_right {
+	.local_response_left, .local_response_right {
 		display: inline-block;
 	}
 
 	.local_response_right {
-		width: 659px;
+		width: 276px;
 		vertical-align: top;
 		margin-top: 24px;
 	}
 
 	.localteam_image, .localteam_image img  {
 		height: 250px;
-		width: 250px;
-		margin-right: 12px;
+		width: 276px;
 	}
+
+	// ******
+	// YOUR LOCAL ASSOCIATION
+	// ******
+
+	.your_local_association h2 p {
+		width: 276px;
+		word-wrap: normal;
+	}
+
+	
 
 
 // ***************************************************************************************************
@@ -480,7 +493,7 @@ a img {
 			background-color: #ffffff;
 			margin: 0 12px 12px 0;
 			padding: 12px;
-			width: 302px;
+			width: 276px;
 			height: 36px;
 			text-align: center;
 		}
@@ -488,7 +501,7 @@ a img {
 
 	@each $i in $infographics_videos {
 	    .#{$i} {
-			width: 302px;
+			width: 276px;
 			height: 180px;
 			background-color: #ffffff;
 			margin: 0 12px 12px 0;
@@ -498,7 +511,7 @@ a img {
 	}
 
 	.infographic1 img, .infographic2 img, .infographic3 img {
-		width: 302px;
+		width: 276px;
 		height: 180px;
 	}
 
@@ -512,7 +525,7 @@ a img {
 
 	.share_infographics {
 		background-color: #dddddd;
-		width: 302px;
+		width: 276px;
 		height: 36px;
 		bottom: 0;
 		position: absolute;
@@ -561,16 +574,17 @@ a img {
 	.volunteer_left { 
 		vertical-align: top;
 		margin-right: 12px;
-		width: 336px;
+		width: 276px;
 		height: 250px;
 		img {
-			width: 336px;
+			width: 276px;
 			height: 250px;
 		}
 	}
 
 	.volunteer_right {
-		width: 585px;
+		width: 276px;
+		padding-top: 12px;
 		padding-bottom: 62px;
 	}
 
@@ -590,21 +604,31 @@ a img {
 // MEDIA QUERIES
 // ***********
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
 
 	.container {
-		width: 748px !important;
+		width: 440px !important;
+		.logo {
+			width: 440px !important;
+			img {
+				width: 440px !important;
+			}
+		}
+
+		.social_share {
+			width: 440px !important;
+		}
 	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
-			width: 748px !important;
+			width: 440px !important;
 		}
 	}
 
 	@each $i in $boxgrid {
 	    .#{$i} {
-			width: $div-half;
+			width: 440px !important;
 			margin-right: 0 !important;
 		}
 	}
@@ -617,17 +641,35 @@ a img {
 	// HOMEPAGE
 	// *********
 
+	.carousel_left {
+		width: 416px !important;
+		.carousel_image {
+				width: 416px !important;
+				margin-bottom: 12px;
+				img {
+					width: 416px !important;
+				}
+			}
+	}
+
 	.carousel_right {
-		width: 380px !important;
+		padding: 0 !important;
+		width: 416px !important;
 		.carousel_prompt {
-			width: 192px;
+			width: 208px !important;
+			position: relative !important;
+			padding: 0;
 		}
 	}
 
 	.box_image {
 		img {
-			width: 344px !important;
+			width: 416px !important;
 		}
+	}
+
+	.bottom_home_share {
+		width: 416px !important;
 	}
 
 		// ******
@@ -635,102 +677,95 @@ a img {
 		// ******
 
 			.mp_picture {
-				width: 164px;
+				width: 200px;
 			}
 
 			.localteam_right {
-				width: 165px;
+				width: 200px;
 			}
 
 	// ******
 	// YOUR TEAM 
-	// ******
+	// ******	
 
 	.david_image {
-		width: 354px;
+		width: 416px;
 		img {
-			width: 354px !important;
+			width: 416px !important;
 		}
 	}
 
 	.david_right {
-		width: 354px !important;
+		width: 416px !important;
+	}
+
+	.yourteam_box {
+		width: 440px !important;
 	}
 
 	.representative_image, .list_mps_image {
-		width: 342px;
+		width: 416px;
 		img {
-			width: 342px !important;
+			width: 416px !important;
 		}
 	}
-	
-	.list_of_parliamentary_candidates, .list_of_members {
-		width: 724px !important;
-	}
-	
 
+	// ******
+	// MEMBERS OF PARLIAMENT
+	// ******
+
+	.list_of_parliamentary_candidates, .list_of_members {
+		width: 416px !important;
+	}
 
 	// ***********
 	// DAVID CAMERON
 	// ***********
 
 	.response_right {
-		width: 447px;
-	}
+		width: 412px;
 
-	.response_left {
-		vertical-align: top;
 	}
 
 	// ***********
-	// CAMPAIGN
+	// CAMPAIGNS
 	// ***********
 
 	@each $i in $sevenpages{
 	    .#{$i} {
-			width: 231px !important;
-			height: 60px;
+			width: 416px !important;
+			height: 36px;
 			vertical-align: top;
 		}
 	}
 
 	@each $i in $infographics_videos {
 	    .#{$i} {
-			width: 231px;
+			width: 416px;
 		}	
 	}
 
 	.infographic1 img, .infographic2 img, .infographic3 img {
-		width: 231px !important;
+		width: 416px !important;
 	}
 
-	.share_infographics {
-		width: 231px;
+	.share_infographics, .sharethefacts_image, .sharethefacts_image img  {
+		width: 416px !important;
 	}
-
-	.sharethefacts_image {
-		width: 724px !important;
-		img {
-			width: 724px;
-		}
-	}
-
 
 	// ******
 	// VOLUNTEER
 	// ******
 
 	.volunteer_left { 
-		width: 336px;
-		height: 250px;
+		width: 416px;
 		img {
-			width: 336px;
-			height: 250px;
+			width: 416px;
 		}
 	}
 
 	.volunteer_right {
-		width: 373px;
+		width: 416px;
 	}
 
 
@@ -739,9 +774,17 @@ a img {
 	// ***********
 
 	.local_response_right {
-		width: 459px;
+		width: 412px;
 	}
 
+	.yourteam_response_content {
+		padding-bottom: 36px;
+	}
+
+	.localteam_image, .localteam_image img  {
+		height: 250px;
+		width: 415px;
+	}
 
 
 }
@@ -749,7 +792,7 @@ a img {
 // ***************************************************************************************************
 
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
 
 	.container {
 		width: 620px !important;
@@ -866,6 +909,10 @@ a img {
 		}
 	}
 
+	// ******
+	// MEMBERS OF PARLIAMENT
+	// ******
+
 	.list_of_parliamentary_candidates, .list_of_members {
 		width: 596px !important;
 	}
@@ -883,7 +930,7 @@ a img {
 	}
 
 	// ***********
-	// CAMPAIGN
+	// CAMPAIGNS
 	// ***********
 
 	@each $i in $sevenpages{
@@ -905,13 +952,13 @@ a img {
 	}
 
 	.share_infographics {
-		width: 188px;
+		width: 188px !important;
 	}
 
 	.sharethefacts_image {
 		width: 596px !important;
 		img {
-			width: 596px;
+			width: 596px !important;
 		}
 	}
 
@@ -942,35 +989,31 @@ a img {
 
 
 }
-
 // ***************************************************************************************************
 
-
-@media (max-width: 480px) {
+@media (min-width: 768px) {
 
 	.container {
-		width: 440px !important;
-		.logo {
-			width: 440px !important;
-			img {
-				width: 440px !important;
-			}
+		width: 748px !important;
+		.logo, .logo img, .social_share {
+			width: 300px !important;
+			display: inline-block;
 		}
-
 		.social_share {
-			width: 440px !important;
+			float: right !important;
+			margin-top: 12px !important;
 		}
 	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
-			width: 440px !important;
+			width: 748px !important;
 		}
 	}
 
 	@each $i in $boxgrid {
 	    .#{$i} {
-			width: 440px !important;
+			width: 368px !important;
 			margin-right: 0 !important;
 		}
 	}
@@ -983,35 +1026,22 @@ a img {
 	// HOMEPAGE
 	// *********
 
+
 	.carousel_left {
-		width: 416px !important;
-		.carousel_image {
-				width: 416px !important;
-				margin-bottom: 12px;
-				img {
-					width: 416px !important;
-				}
-			}
+		margin-right: 12px !important;
 	}
 
 	.carousel_right {
-		padding: 0 !important;
-		width: 416px !important;
+		width: 380px !important;
 		.carousel_prompt {
-			width: 208px !important;
-			position: relative !important;
-			padding: 0;
+			width: 192px;
 		}
 	}
 
 	.box_image {
 		img {
-			width: 416px !important;
+			width: 344px !important;
 		}
-	}
-
-	.bottom_home_share {
-		width: 416px !important;
 	}
 
 		// ******
@@ -1019,91 +1049,106 @@ a img {
 		// ******
 
 			.mp_picture {
-				width: 200px;
+				width: 164px;
 			}
 
 			.localteam_right {
-				width: 200px;
+				width: 165px;
 			}
 
 	// ******
 	// YOUR TEAM 
-	// ******	
+	// ******
 
 	.david_image {
-		width: 416px;
+		width: 354px;
 		img {
-			width: 416px !important;
+			width: 354px !important;
 		}
 	}
 
 	.david_right {
-		width: 416px !important;
-	}
-
-	.yourteam_box {
-		width: 440px !important;
+		width: 354px !important;
 	}
 
 	.representative_image, .list_mps_image {
-		width: 416px;
+		width: 342px;
 		img {
-			width: 416px !important;
+			width: 342px !important;
 		}
 	}
 
+	// ******
+	// MEMBERS OF PARLIAMENT
+	// ******
+	
 	.list_of_parliamentary_candidates, .list_of_members {
-		width: 416px !important;
+		width: 724px !important;
 	}
+	
+
 
 	// ***********
 	// DAVID CAMERON
 	// ***********
 
 	.response_right {
-		width: 412px;
+		width: 447px;
+	}
 
+	.response_left {
+		vertical-align: top;
 	}
 
 	// ***********
-	// CAMPAIGN
+	// CAMPAIGNS
 	// ***********
 
 	@each $i in $sevenpages{
 	    .#{$i} {
-			width: 416px !important;
-			height: 36px;
+			width: 231px !important;
+			height: 60px;
 			vertical-align: top;
 		}
 	}
 
 	@each $i in $infographics_videos {
 	    .#{$i} {
-			width: 416px;
+			width: 231px !important;
 		}	
 	}
 
 	.infographic1 img, .infographic2 img, .infographic3 img {
-		width: 416px !important;
+		width: 231px !important;
 	}
 
-	.share_infographics, .sharethefacts_image, .sharethefacts_image img  {
-		width: 416px !important;
+	.share_infographics {
+		width: 231px !important;
 	}
+
+	.sharethefacts_image {
+		width: 724px !important;
+		img {
+			width: 724px !important;
+		}
+	}
+
 
 	// ******
 	// VOLUNTEER
 	// ******
 
 	.volunteer_left { 
-		width: 416px;
+		width: 336px;
+		height: 250px;
 		img {
-			width: 416px;
+			width: 336px;
+			height: 250px;
 		}
 	}
 
 	.volunteer_right {
-		width: 416px;
+		width: 373px;
 	}
 
 
@@ -1112,55 +1157,48 @@ a img {
 	// ***********
 
 	.local_response_right {
-		width: 412px;
+		width: 459px;
 	}
-
-	.yourteam_response_content {
-		padding-bottom: 36px;
-	}
-
-	.localteam_image, .localteam_image img  {
-		height: 250px;
-		width: 415px;
-	}
-
 
 }
 
 // ***************************************************************************************************
 
-
-@media (max-width: 320px) {
+@media (min-width: 960px) {
 
 	.container {
-		width: 300px !important;
-		.logo {
+		width: 940px !important;
+		.logo, .logo img, .social_share {
 			width: 300px !important;
-			img {
-				width: 300px !important;
-			}
 		}
-
 		.social_share {
-			width: 300px !important;
+			float: right !important;
+			margin-top: 12px !important;
 		}
 	}
 
 	@each $i in $fullpagedivs{
 	    .#{$i} {
-			width: 300px !important;
+			width: 940px !important;
 		}
 	}
 
 	@each $i in $boxgrid {
     	.#{$i} {
-			width: 300px !important;
-			margin-right: 0 !important;
+			width: 305px !important;
+			margin-right: 12px !important;
 		}
 	}
 
-	.box1, .box3, .box5 {
-		margin-right: 12px !important;
+	.box_image {
+		width: 281px !important;
+		img {
+			width: 281px !important;
+		}
+	}
+
+	.box3, .box6 {
+		margin-right: 0 !important;
 	}
 
 
@@ -1169,37 +1207,26 @@ a img {
 	// *********
 
 	.carousel_left {
-		width: 276px !important;
+		width: 288px !important;
 		.carousel_image {
-				width: 276px !important;
-				margin-bottom: 12px;
+				width: 288px !important;			
 				img {
-					width: 276px !important;
+					width: 288px !important;
 				}
 			}
 		}
 	
-	.carousel_text {
-		width: 276px !important;
-	}	
-
 	.carousel_right	{
+		width: 561px !important;
+		.carousel_text {
+			width: 561px !important;
+		}
 		.carousel_prompt {
-		margin-top: 12px !important;
-		width: 276px !important;
-		padding-bottom: 48px !important;
+			width: 334px !important;
+			bottom: 12px !important;
+			right: 168px !important;
+			position: absolute !important;
 		}
-	}
-
-	.box_image {
-		img {
-			width: 277px !important;
-		}
-	}
-
-	.bottom_home_share {
-		width: 277px !important;
-		margin-bottom: 24px;
 	}
 
 		// ******
@@ -1219,47 +1246,76 @@ a img {
 	// ******	
 
 	.david_image {
-		width: 276px;
-		img {
-			width: 276px !important;
-		}
+		width: 624px !important;
+			img {
+				width: 624px !important;
+			}
 	}
 
 	.david_right {
-		width: 276px !important;
+		width: 277px !important;
 	}
 
 	.yourteam_box {
-		width: 300px !important;
+		width: 305px !important;
 	}
 
 	.representative_image, .list_mps_image {
-		width: 276px;
+		width: 281px;
 		img {
-			width: 276px !important;
+			width: 281px !important;
 		}
 	}
-
-	.list_of_parliamentary_candidates, .list_of_members {
-		width: 276px !important;
-	}
-
 
 	// ***********
 	// DAVID CAMERON
 	// ***********
 
 	.response_right {
-		width: 272px;
+		width: 600px;
 	}
 
+	.localteam_image {
+		width: 276px !important;
+		img {
+			width: 276px !important;
+		}
+	}
+
+		// ******
+	// MEMBERS OF PARLIAMENT
+	// ******
+
+	.list_of_parliamentary_candidates, .list_of_members {
+		width: 916px !important;
+	}
+
+
+	// ******
+	// YOUR LOCAL TEAM
+	// ******
+
+	.local_response_right {
+		width: 628px !important;
+	}
+
+	.yourteam_response_content {
+		padding-bottom: 36px;
+	}
+
+	.localteam_image, .localteam_image img  {
+		width: 276px;
+		margin-right: 12px;
+	}
+
+
 	// ***********
-	// CAMPAIGN
+	// CAMPAIGNS
 	// ***********
 
 	@each $i in $sevenpages{
 	    .#{$i} {
-			width: 277px !important;
+			width: 295px !important;
 			height: 36px;
 			vertical-align: top;
 		}
@@ -1267,16 +1323,16 @@ a img {
 
 	@each $i in $infographics_videos {
 	    .#{$i} {
-			width: 277px !important;
+			width: 295px !important;
 		}	
 	}
 
 	.infographic1 img, .infographic2 img, .infographic3 img {
-		width: 277px !important;
+		width: 295px !important;
 	}
 
 	.share_infographics, .sharethefacts_image, .sharethefacts_image img  {
-		width: 277px !important;
+		width: 916px !important;
 	}
 
 
@@ -1285,31 +1341,20 @@ a img {
 	// ******
 
 	.volunteer_left { 
-		width: 277px;
+		width: 336px !important;
 		img {
-			width: 277px;
+			width: 336px !important;
 		}
 	}
 
 	.volunteer_right {
-		width: 277px;
-	}
-
-	// ***********
-	// YOUR LOCAL TEAM
-	// ***********
-
-	.local_response_right {
-		width: 288px;
-	}
-
-	.yourteam_response_content {
-		padding-bottom: 36px;
-	}
-
-	.localteam_image, .localteam_image img  {
-		height: 250px;
-		width: 276px;
+		width: 564px !important;
+		padding-top: 0;
 	}
 
 }
+
+
+
+
+
