@@ -464,7 +464,7 @@ a img {
 	}
 
 	.localteam_image, .localteam_image img  {
-		height: 250px;
+		height: 276px;
 		width: 276px;
 	}
 
@@ -546,12 +546,12 @@ a img {
 	}
 
 	.sharethefacts_image {
-		width: 936px;
+		width: 276px;
 		background-color: #ffffff;
 		height: 144px;
 		margin-bottom: 48px;
 		img {
-			width: 936px;
+			width: 276px;
 			height: 144px;
 		}
 	}
@@ -1053,21 +1053,37 @@ a img {
 	// YOUR TEAM 
 	// ******
 
+	.yourteam_box {
+		width: 241px !important;
+		margin-right: 12px !important;
+	}
+
+	.box3.yourteam_box {
+		margin-right: 0 !important;
+	}
+
 	.david_image {
-		width: 354px;
+		width: 480px;
 		img {
-			width: 354px !important;
+			width: 480px !important;
 		}
 	}
 
 	.david_right {
-		width: 354px !important;
+		width: 229px !important;
 	}
 
 	.representative_image, .list_mps_image {
-		width: 342px;
+		width: 217px;
 		img {
-			width: 342px !important;
+			width: 217px !important;
+		}
+	}
+
+	.list_mps_image {
+		height: 216px !important;
+		img {
+			height: 216px !important;
 		}
 	}
 
@@ -1086,11 +1102,19 @@ a img {
 	// ***********
 
 	.response_right {
-		width: 447px;
+		width: 433px;
 	}
 
 	.response_left {
 		vertical-align: top;
+		width: 276px !important;
+		margin-right: 12px !important;
+		.localteam_image {
+			width: 276px !important;
+			img {
+				width: 276px !important;
+			}
+		}
 	}
 
 	// ***********
@@ -1099,24 +1123,37 @@ a img {
 
 	@each $i in $sevenpages{
 	    .#{$i} {
-			width: 231px !important;
-			height: 60px;
+			width: 350px !important;
+			height: 48px;
 			vertical-align: top;
+			margin-right: 12px;
 		}
+	}
+
+	.seven_pages2, .seven_pages4, .seven_pages6 {
+		margin-right: 0;
 	}
 
 	@each $i in $infographics_videos {
 	    .#{$i} {
-			width: 231px !important;
+			width: 350px !important;
 		}	
 	}
 
 	.infographic1 img, .infographic2 img, .infographic3 img {
-		width: 231px !important;
+		width: 350px !important;
+	}
+
+	.infographic3, .video3 {
+		display: none !important;
+	}
+
+	.infographic2, .infographic4, .video2 {
+		margin-right: 0 !important;
 	}
 
 	.share_infographics {
-		width: 231px !important;
+		width: 350px !important;
 	}
 
 	.sharethefacts_image {
@@ -1125,6 +1162,8 @@ a img {
 			width: 724px !important;
 		}
 	}
+
+
 
 
 	// ******
@@ -1150,7 +1189,18 @@ a img {
 	// ***********
 
 	.local_response_right {
-		width: 459px;
+		width: 433px !important;
+	}
+	
+	.local_response_left {
+		width: 276px !important;
+		margin-right: 12px !important;
+		.localteam_image {
+			width: 276px !important;
+			img {
+				width: 276px !important;
+			}
+		}
 	}
 
 }
@@ -1264,8 +1314,12 @@ a img {
 	// DAVID CAMERON
 	// ***********
 
+	.response_left {
+		margin-right: 12px;
+	}
+
 	.response_right {
-		width: 600px;
+		width: 625px;
 	}
 
 	.localteam_image {
@@ -1289,7 +1343,7 @@ a img {
 	// ******
 
 	.local_response_right {
-		width: 628px !important;
+		width: 625px !important;
 	}
 
 	.yourteam_response_content {
@@ -1309,9 +1363,14 @@ a img {
 	@each $i in $sevenpages{
 	    .#{$i} {
 			width: 295px !important;
-			height: 36px;
+			height: 36px !important;
 			vertical-align: top;
+			margin-right: 12px;
 		}
+	}
+
+	.seven_pages3, .seven_pages6 {
+		margin-right: 0 !important;
 	}
 
 	@each $i in $infographics_videos {
@@ -1325,8 +1384,24 @@ a img {
 	}
 
 	.share_infographics, .sharethefacts_image, .sharethefacts_image img  {
-		width: 916px !important;
+		width: 295px !important;
 	}
+	
+	.sharethefacts_image {
+		width: 916px !important;
+		img {
+			width: 916px !important;
+		}
+	}
+
+	.infographic3, .video3 {
+		display: inline-block !important;
+	}
+
+	.infographic2, .infographic4, .video2 {
+		margin-right: 12px !important;
+	}
+
 
 
 	// ******
