@@ -1060,6 +1060,15 @@ a img {
 	// YOUR TEAM 
 	// ******
 
+	.yourteam_box {
+		width: 241px !important;
+		margin-right: 12px !important;
+	}
+
+	.box3 .yourteam_box {
+		margin-right: 0 !important;
+	}
+
 	.david_image {
 		width: 354px;
 		img {
@@ -1072,9 +1081,16 @@ a img {
 	}
 
 	.representative_image, .list_mps_image {
-		width: 342px;
+		width: 217px;
 		img {
-			width: 342px !important;
+			width: 217px !important;
+		}
+	}
+
+	.list_mps_image {
+		height: 216px !important;
+		img {
+			height: 216px !important;
 		}
 	}
 
