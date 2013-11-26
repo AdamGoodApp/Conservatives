@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Athena"
-AuthUserFile /nfs/c10/h01/mnt/145546/domains/dev.frontdigital.com/html/athena/.htpasswd
-Require valid-user
