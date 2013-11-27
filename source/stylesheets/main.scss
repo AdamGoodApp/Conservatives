@@ -26,10 +26,9 @@ body {
 
 
 		.social_share {
-			float: right;
 			width: 300px;
 			height: 50px;
-			margin: 12px 0;
+			margin-bottom: 12px;
 			display: inline-block;
 			background-color: #efefef;
 
@@ -790,7 +789,7 @@ a img {
 			img {
 				width: 620px !important;
 			}
-		}
+	}
 
 		.social_share {
 			width: 620px !important;
@@ -1003,9 +1002,12 @@ a img {
 				nav ul li a {
 					padding: 12px;
 				}
-				nav ul li a:hover {
+				nav ul li a:hover{
 					background-color: #dddddd;
 					padding: 12px;
+				}
+				.active{
+					background-color: #dddddd;
 				}
 			}
 	}
@@ -1441,8 +1443,9 @@ a img {
 
 // ***************************************************************************************************
 
+// FOR RESPONSIVE NAV BAR
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
 
 	.navigation_mobile {
 		display: block;
@@ -1458,15 +1461,12 @@ a img {
 		}
 	}
 
-	nav {
-	
+	nav {	
 		li {
 			font-size: 15px;
 			display: block;
 		}
-
 	}
-
 
 }
 

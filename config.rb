@@ -38,12 +38,15 @@
 # Reload the browser automatically whenever files change
 # activate :livereload
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def magic_link_to(link, url, opts={})
+      current_url = current_resource.url
+      if current_url == url_for(url) || current_url == url_for(url) + "/"
+          opts[:class] = "active"
+      end
+      link_to(link, url, opts)
+  end
+end
 
 set :css_dir, 'stylesheets'
 
