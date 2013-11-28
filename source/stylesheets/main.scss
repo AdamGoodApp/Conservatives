@@ -104,14 +104,17 @@ body {
 @each $i in $boxgrid {
     .#{$i} {
 		float: left;
-		background-color: #777777;
-		height: 360px;
-		width: 300px;
-		margin-bottom: 12px;
-		padding: 12px;
-		position: relative;
-		margin-right: 12px;
 	}
+}
+
+.box_contents {
+	background-color: #777777;
+	height: 360px;
+	width: 300px;
+	margin-bottom: 12px;
+	padding: 12px;
+	position: relative;
+	margin-right: 12px;
 }
 
 
@@ -620,14 +623,12 @@ a img {
 		}
 	}
 
-	@each $i in $boxgrid {
-	    .#{$i} {
+	.box_contents {
 			width: 440px !important;
 			margin-right: 0 !important;
 		}
-	}
 
-	.box1, .box3, .box5 {
+	.box_contents.first, .box_contents.third, .box_contents.fifth {
 		margin-right: 12px !important;
 	}
 
@@ -810,14 +811,12 @@ a img {
 		}
 	}
 
-	@each $i in $boxgrid {
-	    .#{$i} {
-			width: 304px !important;
-			margin-right: 0 !important;
-		}
+	.box_contents {
+		width: 304px !important;
+		margin-right: 0 !important;
 	}
 
-	.box1, .box3, .box5 {
+	.box_contents.first, .box_contents.third, .box_contents.fifth {
 		margin-right: 12px !important;
 	}
 
@@ -1022,14 +1021,12 @@ a img {
 		}
 	}
 
-	@each $i in $boxgrid {
-	    .#{$i} {
-			width: 368px !important;
-			margin-right: 0 !important;
-		}
+	.box_contents {
+		width: 368px !important;
+		margin-right: 0 !important;
 	}
 
-	.box1, .box3, .box5 {
+	.box_contents.first, .box_contents.third, .box_contents.fifth {
 		margin-right: 12px !important;
 	}
 
@@ -1249,11 +1246,9 @@ a img {
 		}
 	}
 
-	@each $i in $boxgrid {
-    	.#{$i} {
-			width: 305px !important;
-			margin-right: 12px !important;
-		}
+	.box_contents {
+		width: 305px !important;
+		margin-right: 12px !important;
 	}
 
 	.box_image {
@@ -1263,7 +1258,7 @@ a img {
 		}
 	}
 
-	.box3, .box6 {
+	.box_contents.third, .box_contents.sixth {
 		margin-right: 0 !important;
 	}
 
@@ -1352,7 +1347,7 @@ a img {
 		}
 	}
 
-		// ******
+	// ******
 	// MEMBERS OF PARLIAMENT
 	// ******
 
