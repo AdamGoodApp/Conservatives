@@ -44,49 +44,59 @@ title: Your team
 </div>
 
 
-  <div class="box1 yourteam_box">
-    <div class="local_team">
-      <h2 class="subtitle">Your Local Team</h2>
-      <p class="subtext">Enter your postcode to find out more about your local team</p>
-    </div>
-     <!-- TEMP DIV FOR FORM -->
-    <div style="background-color: #eeeeee; height: 36px; margin-top: 120px;">
-    </div>
-    <div class="button">
-      <%= link_to "#{image_tag("")}","/yourteam.html" %>
+<div class="three_box_wrapper yourteam">
+
+  <div class="box1">
+    <div class="box_contents yourteam_box1 first">
+      <div class="local_team">
+        <h2 class="subtitle">Your Local Team</h2>
+        <p class="subtext">Enter your postcode to find out more about your local team</p>
+      </div>
+       <!-- TEMP DIV FOR FORM -->
+      <div style="background-color: #eeeeee; height: 36px; margin-top: 120px;">
+      </div>
+      <div class="button">
+        <%= link_to "#{image_tag("")}","/yourteam.html" %>
+      </div>
     </div>
 	</div>
 
-	<div class="box2 yourteam_box">
-    <h2 class="subtitle">List of MPs & Candidates</h2>
-    <ul>
-    	<li class="subtext"><%= link_to "Members of Parliament", "" %>
-    	</li>
-    	<li class="subtext"><%= link_to "Parliamentary Candidates", "" %>
-    	</li>
-  	</ul>
-    <div class="list_mps_image">
-      <%= link_to "#{image_tag("")}","http://incometaxcut.conservatives.com/" %>
-   	</div>
+	<div class="box2">
+    <div class="box_contents yourteam_box2 second">
+      <h2 class="subtitle">List of MPs & Candidates</h2>
+      <ul>
+      	<li class="subtext"><%= link_to "Members of Parliament", "" %>
+      	</li>
+      	<li class="subtext"><%= link_to "Parliamentary Candidates", "" %>
+      	</li>
+    	</ul>
+      <div class="list_mps_image">
+        <%= link_to "#{image_tag("")}","http://incometaxcut.conservatives.com/" %>
+     	</div>
+    </div>
   </div>
 
-	<div class="box3 yourteam_box">
-    <h2 class="subtitle">Find your other representatives</h2>
-    <ul>
-    	<li class="subtext"><%= link_to "Members of the House of Lords", "" %>
-    	</li>
-    	<li class="subtext"><%= link_to "Members of the European Parliament", "" %>
-    	</li>
-    	<li class="subtext"><%= link_to "Members of the Scottish Parliament", "" %>
-    	</li>
-    	<li class="subtext"><%= link_to "Members of the Welsh Assembly", "" %>
-    	</li>
-    	<li class="subtext"><%= link_to "Members of the London Assembly", "" %>
-    	</li>
-  	</ul>
-    <div class="representative_image">
-    	<%= link_to "#{image_tag("")}", "" %>
+	<div class="box3">
+    <div class="box_contents yourteam_box3 third">
+      <h2 class="subtitle">Find your other representatives</h2>
+      <ul>
+      	<li class="subtext"><%= link_to "Members of the House of Lords", "" %>
+      	</li>
+      	<li class="subtext"><%= link_to "Members of the European Parliament", "" %>
+      	</li>
+      	<li class="subtext"><%= link_to "Members of the Scottish Parliament", "" %>
+      	</li>
+      	<li class="subtext"><%= link_to "Members of the Welsh Assembly", "" %>
+      	</li>
+      	<li class="subtext"><%= link_to "Members of the London Assembly", "" %>
+      	</li>
+    	</ul>
+      <div class="representative_image">
+      	<%= link_to "#{image_tag("")}", "" %>
+      </div>
     </div>
 	</div>
+
+</div>
 
 <%= partial "share_this_page" %>
