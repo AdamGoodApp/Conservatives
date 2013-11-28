@@ -494,18 +494,16 @@ a img {
 		}
 	}
 
-	@each $i in $infographics_videos {
-	    .#{$i} {
+	.infographic_contents, .video_contents {
 			width: 276px;
 			height: 180px;
 			background-color: #ffffff;
 			margin: 0 12px 12px 0;
 			display: inline-block;
-			position: relative;
-		}	
+			position: relative;	
 	}
 
-	.infographic1 img, .infographic2 img, .infographic3 img {
+	.infographic_contents img {
 		width: 276px;
 		height: 180px;
 	}
@@ -514,7 +512,7 @@ a img {
 		margin-bottom: 48px;
 	}
 
-	.seven_pages3, .seven_pages6, .infographic3, .video3 {
+	.seven_pages3, .seven_pages6, .infographic_contents.third, .video_contents.third {
 		margin-right: 0;
 	}
 
@@ -734,13 +732,16 @@ a img {
 		}
 	}
 
-	@each $i in $infographics_videos {
-	    .#{$i} {
-			width: 416px;
-		}	
+	.infographic1, .infographic2, .infographic3, .video1, .video2, .video3 {
+		display: inline-block;
 	}
 
-	.infographic1 img, .infographic2 img, .infographic3 img {
+	.infographic_contents, .video_contents {
+		width: 416px;
+
+	}	
+
+	.infographic_contents img {
 		width: 416px !important;
 	}
 
@@ -928,13 +929,11 @@ a img {
 		}
 	}
 
-	@each $i in $infographics_videos {
-	    .#{$i} {
+	.infographic_contents, .video_contents {
 			width: 188px;
-		}	
 	}
 
-	.infographic1 img, .infographic2 img, .infographic3 img {
+	.infographic_contents img {
 		width: 188px !important;
 	}
 
@@ -1149,21 +1148,19 @@ a img {
 		margin-right: 0;
 	}
 
-	@each $i in $infographics_videos {
-	    .#{$i} {
+	.infographic_contents, .video_contents {
+		width: 350px !important;
+		img {
 			width: 350px !important;
-		}	
+		}
 	}
 
-	.infographic1 img, .infographic2 img, .infographic3 img {
-		width: 350px !important;
-	}
 
 	.infographic3, .video3 {
 		display: none !important;
 	}
 
-	.infographic2, .infographic4, .video2 {
+	.infographic_contents.second, .video_contents.second {
 		margin-right: 0 !important;
 	}
 
@@ -1391,14 +1388,11 @@ a img {
 		margin-right: 0 !important;
 	}
 
-	@each $i in $infographics_videos {
-	    .#{$i} {
-			width: 295px !important;
-		}	
-	}
-
-	.infographic1 img, .infographic2 img, .infographic3 img {
+	.infographic_contents, .video_contents {
 		width: 295px !important;
+		img {
+			width: 295px !important;
+		}
 	}
 
 	.share_infographics, .sharethefacts_image, .sharethefacts_image img  {
@@ -1412,15 +1406,18 @@ a img {
 		}
 	}
 
-	.infographic3, .video3 {
+	.infographic3, .infographic4, .video3 {
 		display: inline-block !important;
 	}
 
-	.infographic2, .infographic4, .video2 {
-		margin-right: 12px !important;
+	.infographic_contents.third {
+		margin-right: 0 !important;
 	}
 
 
+	.infographic_contents.second, .video_contents.second {
+		margin-right: 12px !important;
+	}
 
 	// ******
 	// VOLUNTEER
