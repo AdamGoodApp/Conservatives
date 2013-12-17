@@ -6,25 +6,24 @@ title:
 <!-- *************CAROUSEL*************** -->
 <div class="carousel">
 
-	<h2 class="subtitle">A tax cut for 25M people</h2>
 	<div class="carousel_left">
-		<div class="carousel_image">
-			<%= link_to "#{image_tag("")}", "" %>
-		</div>
-	</div>
-
-	<div class="carousel_right">
+		<h2 class="subtitle">A tax cut for 25M people</h2>
 		<div class="carousel_text">
 			<p>
 			<%= lorem.paragraph %>
 			</p>
 		</div>
 		<p class="subtitle carousel_prompt">See how the tax cut will affect you</p>
-		<div class="button large_button">
+		<div class="button large_button" id="home_button">
     		<%= link_to "#{image_tag("")}", "" %>
 		</div>
 	</div>
 
+	<div class="carousel_right">
+		<div class="carousel_image">
+			<%= link_to "#{image_tag("")}", "" %>
+		</div>
+	</div>
 </div>
 <!-- *************CAROUSEL*************** -->
 

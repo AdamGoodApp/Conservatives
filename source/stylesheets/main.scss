@@ -12,6 +12,11 @@ body {
 		margin: auto !important;
 		font-size: $global_font_size;
 
+		.header_background {
+			background-image: url($header_background_light);
+			background-repeat: repeat-x;
+		}
+
 		.logo {
 			width: 300px;
 			height: 50px;
@@ -112,9 +117,14 @@ body {
 	height: 360px;
 	width: 300px;
 	margin-bottom: 12px;
-	padding: 12px;
+	
 	position: relative;
 	margin-right: 12px;
+}
+
+.six_box_wrapper.home {
+	height: 733px;
+	margin-bottom: 12px;
 }
 
 
@@ -255,9 +265,14 @@ a img {
 	.carousel {
 		padding: 12px;
 		position: relative;
+		margin-bottom: 0px !important;
 
 		.carousel_left {
 			display: inline-block;
+			position: relative;
+			#home_button {
+				padding-top: 5%;
+			}
 			.carousel_image {
 				width: 276px;
 				height: 200px;
@@ -636,6 +651,9 @@ a img {
 
 	.carousel_left {
 		width: 416px !important;
+		.subtitle.carousel_prompt {
+			width: 70%;
+		}
 		.carousel_image {
 				width: 416px !important;
 				margin-bottom: 12px;
@@ -826,8 +844,15 @@ a img {
 	// *********
 
 	.carousel_left {
-		width: 292px !important;
+		width: 287px !important;
 		margin-right: 12px !important;
+		.subtitle.carousel_prompt {
+			width: 100%;
+		}
+		#home_button {
+			padding-top: 6%;
+
+		}
 		.carousel_image {
 				width: 292px !important;
 				img {
@@ -837,7 +862,7 @@ a img {
 	}
 
 	.carousel_right {
-		width: 289px !important;
+		width: 280px !important;
 		.carousel_text {
 			max-height: 118px;
 			overflow: hidden;
@@ -1036,10 +1061,14 @@ a img {
 
 	.carousel_left {
 		margin-right: 12px !important;
+		width: 334px !important;
+		.subtitle.carousel_prompt {
+			width: 66%;
+		}
 	}
 
 	.carousel_right {
-		width: 380px !important;
+		width: 360px !important;
 		.carousel_prompt {
 			width: 192px;
 		}
@@ -1265,7 +1294,7 @@ a img {
 	// *********
 
 	.carousel_left {
-		width: 288px !important;
+		width: 470px !important;
 		.carousel_image {
 				width: 288px !important;			
 				img {
@@ -1274,8 +1303,11 @@ a img {
 			}
 		}
 	
+	#home_button {
+		padding-top: 15px;
+	}
 	.carousel_right	{
-		width: 561px !important;
+		width: 400px !important;
 		.carousel_text {
 			width: 561px !important;
 		}
