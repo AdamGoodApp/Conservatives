@@ -7,30 +7,20 @@
 body {
 	font-family: $font;
 	font-size: 100% !important;
-	.container {
-		width: 300px;
+	.main_container {
 		margin: auto !important;
 		font-size: $global_font_size;
 
 		.logo {
-			width: 300px;
-			height: 50px;
-			background-color: #efefef;
 			margin: 12px 0;
 			display: inline-block;
-			img {
-				width: 300px;
-				height: 50px;
-			}
 		}
 
 
 		.social_share {
 			width: 300px;
-			height: 50px;
 			margin-bottom: 12px;
 			display: inline-block;
-			background-color: #efefef;
 
 			.fb-like.fb_edge_widget_with_comment.fb_iframe_widget, .twitter iframe {
 				float: right;
@@ -42,8 +32,20 @@ body {
 			background-color: #dddddd;
 		}
 
+		header {
+			background-color: #206db2;
+		}
+
+		.facebook_share, .twitter_share {
+			display: inline-block;
+		}
+
+		.navigation_wrapper {
+			background-color: #044177
+		}
+
 		footer {
-			background-color: #efefef;
+			background-color: #206db2;
 
 			ul {
 				list-style-type: none;
@@ -54,9 +56,13 @@ body {
 			.mabutt {
 				clear: both;
 				padding: 5px 20px ;
-				background-color: #dddddd;
+				background-color: #044177;
 			}
 		}
+	}
+	.container {
+		width: 300px;
+		margin: auto !important;
 	}	
 }
  
@@ -73,7 +79,6 @@ body {
     .#{$i} {
     margin-bottom: 12px;
 	width: 300px;
-	background-color: #999999;
 	// height: 300px;
 	clear: both;
 	padding: 12px;
@@ -95,6 +100,10 @@ body {
 	// height: 200px;
 }
 
+.signup {
+	margin-bottom: 20px !important;
+}
+
 
 // ***************************************************************************************************
 
@@ -103,18 +112,39 @@ body {
 // ********
 @each $i in $boxgrid {
     .#{$i} {
-		float: left;
+		display:inline-block;
 	}
 }
 
 .box_contents {
-	background-color: #777777;
-	height: 360px;
 	width: 300px;
-	margin-bottom: 12px;
-	padding: 12px;
 	position: relative;
+}
+
+.six_box_wrapper.home {
+	margin-bottom: 50px;
+}
+
+.box_title_wrapper {
+	background-color: #044177;
+	padding: 11px 0px 0px 22px;
+}
+
+.box1, .box2, .box4, .box5 {
 	margin-right: 12px;
+}
+
+.box1, .box2, .box3 {
+	margin-bottom: 20px;
+}
+
+.fb_box, .tw_box {
+	margin-right: 14px;
+	padding-bottom: 14px;
+}
+
+.go_box {
+	padding-bottom: 14px;
 }
 
 
@@ -135,30 +165,21 @@ body {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	padding-bottom: 12px;
+	color: #fff;
 }
 
-.subtext { 
+.subtext, p{ 
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 }
 
-p {
-	-webkit-margin-before: 0;
-}
-
 .button {
-	width: 96px;
-	height: 36px;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 12px;
 	position: absolute;
-	bottom: 12px;
+	bottom: 20px;
 	right: 12px;
-	img {
-		width: 96px;
-		height: 36px;
-	}
 }
 
 a {
@@ -219,6 +240,7 @@ a img {
 		.signup {
 			padding: 12px;
 			position: relative;
+			background-color: #044177
 		}
 
 		// ******
@@ -255,9 +277,14 @@ a img {
 	.carousel {
 		padding: 12px;
 		position: relative;
+		margin-bottom: 0px !important;
 
 		.carousel_left {
 			display: inline-block;
+			position: relative;
+			#home_button {
+				padding-top: 5%;
+			}
 			.carousel_image {
 				width: 276px;
 				height: 200px;
@@ -308,15 +335,28 @@ a img {
 		padding: 12px;
 	}
 
-	.box_image {
-		padding-bottom: 12px;
+	.box_footer {
+		background-color: #044177;
+		position: relative;
+		height: 72px;
+	}
+
+	.box_footer_left {
 		position: absolute;
-		bottom: 48px;
-		img {
-			width: 276px;
-			height: 180px;
-			background-color: #333333;
-		}
+		left: 12px;
+		bottom: 12px;
+		width: 138px;
+	}
+
+	.box_footer_left p {
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.david_speech {
+		height: 279px;
 	}
 
 	// FOR SOCIAL LINKS ON DAVID CAMERON DIV
@@ -601,18 +641,17 @@ a img {
 
 @media (min-width: 480px) {
 
-	.container {
-		width: 440px !important;
-		.logo {
-			width: 440px !important;
-			img {
-				width: 440px !important;
-			}
-		}
+	.main_container {
+		
 
 		.social_share {
 			width: 440px !important;
 		}
+	}
+
+	.container {
+		width: 440px !important;
+		margin: auto !important;
 	}
 
 	@each $i in $fullpagedivs{
@@ -627,7 +666,15 @@ a img {
 		}
 
 	.box_contents.first, .box_contents.third, .box_contents.fifth {
-		margin-right: 12px !important;
+		
+	}
+
+	.box1, .box2, .box4, .box5 {
+		margin-right: 12px;
+	}
+
+	.box1, .box2, .box3 {
+		margin-bottom: 20px;
 	}
 
 	// *********
@@ -636,6 +683,9 @@ a img {
 
 	.carousel_left {
 		width: 416px !important;
+		.subtitle.carousel_prompt {
+			width: 70%;
+		}
 		.carousel_image {
 				width: 416px !important;
 				margin-bottom: 12px;
@@ -790,20 +840,19 @@ a img {
 
 @media (min-width: 640px) {
 
-	.container {
-		width: 620px !important;
-		.logo {
-			width: 620px !important;
-			img {
-				width: 620px !important;
-			}
-	}
+	.main_container {
+		
 
 		.social_share {
 			width: 620px !important;
 			float: none !important;
 			margin-top: 0 !important;
 		}
+	}
+
+	.container {
+		width: 620px !important;
+		margin: auto !important;
 	}
 
 	@each $i in $fullpagedivs{
@@ -818,7 +867,15 @@ a img {
 	}
 
 	.box_contents.first, .box_contents.third, .box_contents.fifth {
-		margin-right: 12px !important;
+		
+	}
+
+	.box1, .box2, .box4, .box5 {
+		margin-right: 12px;
+	}
+
+	.box1, .box2, .box3 {
+		margin-bottom: 20px;
 	}
 
 	// *********
@@ -826,8 +883,15 @@ a img {
 	// *********
 
 	.carousel_left {
-		width: 292px !important;
+		width: 287px !important;
 		margin-right: 12px !important;
+		.subtitle.carousel_prompt {
+			width: 100%;
+		}
+		#home_button {
+			padding-top: 6%;
+
+		}
 		.carousel_image {
 				width: 292px !important;
 				img {
@@ -837,7 +901,7 @@ a img {
 	}
 
 	.carousel_right {
-		width: 289px !important;
+		width: 280px !important;
 		.carousel_text {
 			max-height: 118px;
 			overflow: hidden;
@@ -979,9 +1043,8 @@ a img {
 
 @media (min-width: 768px) {
 
-	.container {
-		width: 748px !important;
-		.logo, .logo img, .social_share {
+	.main_container {
+		.social_share {
 			width: 300px !important;
 			display: inline-block;
 		}
@@ -1005,13 +1068,18 @@ a img {
 
 		.navigation {
 				nav ul li a {
-					padding: 12px;
+					padding: 0px 12px 0px 12px;
 				}
 				nav ul li a:hover{
 					background-color: #dddddd;
 					padding: 12px;
 				}
 			}
+	}
+
+	.container {
+		width: 748px !important;
+		margin: auto !important;
 	}
 
 	@each $i in $fullpagedivs{
@@ -1022,11 +1090,18 @@ a img {
 
 	.box_contents {
 		width: 368px !important;
-		margin-right: 0 !important;
 	}
 
 	.box_contents.first, .box_contents.third, .box_contents.fifth {
-		margin-right: 12px !important;
+		
+	}
+
+	.box1, .box2, .box4, .box5 {
+		margin-right: 20px;
+	}
+
+	.box1, .box2, .box3 {
+		margin-bottom: 20px;
 	}
 
 	// *********
@@ -1036,10 +1111,14 @@ a img {
 
 	.carousel_left {
 		margin-right: 12px !important;
+		width: 334px !important;
+		.subtitle.carousel_prompt {
+			width: 66%;
+		}
 	}
 
 	.carousel_right {
-		width: 380px !important;
+		width: 360px !important;
 		.carousel_prompt {
 			width: 192px;
 		}
@@ -1221,10 +1300,9 @@ a img {
 
 @media (min-width: 960px) {
 
-	.container {
-		width: 940px !important;
-		.logo, .logo img, .social_share {
-			width: 300px !important;
+	.main_container {
+		.social_share {
+			width: 305px !important;
 		}
 		.social_share {
 			float: right !important;
@@ -1237,6 +1315,11 @@ a img {
 		}
 	}
 
+	.container {
+		width: 940px !important;
+		margin: auto !important;
+	}
+
 	@each $i in $fullpagedivs{
 	    .#{$i} {
 			width: 940px !important;
@@ -1244,19 +1327,31 @@ a img {
 	}
 
 	.box_contents {
-		width: 305px !important;
-		margin-right: 12px !important;
+		width: 298px !important;
 	}
 
 	.box_image {
-		width: 281px !important;
+		width: 298px !important;
 		img {
-			width: 281px !important;
+			width: 298px !important;
 		}
+	}
+
+	.box_background {
+		background-color: blue;
+		height: 279px;
 	}
 
 	.box_contents.third, .box_contents.sixth {
 		margin-right: 0 !important;
+	}
+
+	.box1, .box2, .box4, .box5 {
+		margin-right: 20px;
+	}
+
+	.box1, .box2, .box3 {
+		margin-bottom: 20px;
 	}
 
 
@@ -1264,8 +1359,21 @@ a img {
 	// HOMEPAGE
 	// *********
 
+	.carousel_wrapper {
+		background-color: #e7f4fe;
+	}
+
+	.sign_up_wrapper {
+		background-color: #e7f4fe;
+		height: 80px;
+	}
+
+	.sign_up_container {
+		height: 120px;
+	}
+
 	.carousel_left {
-		width: 288px !important;
+		width: 470px !important;
 		.carousel_image {
 				width: 288px !important;			
 				img {
@@ -1274,8 +1382,11 @@ a img {
 			}
 		}
 	
+	#home_button {
+		padding-top: 15px;
+	}
 	.carousel_right	{
-		width: 561px !important;
+		width: 400px !important;
 		.carousel_text {
 			width: 561px !important;
 		}

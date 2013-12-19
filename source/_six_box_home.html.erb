@@ -1,87 +1,120 @@
 <div class="six_box_wrapper home">
   <div class="box1">
     <div class="box_contents first">
-      <h2 class="subtitle">David Cameron</h2>
-      <p class="subtext"><%= lorem.sentence %></p>
+      <div class="box_title_wrapper">
+        <h2 class="subtitle">david cameron</h2>
+      </div>
       <div class="box_image">
-        <%= link_to "#{image_tag("")}", "" %>
+        <%= image_tag 'small-island-britain-speech.png', :class => 'david_speech' %>
       </div>
-      <div class="button">
-        <%= link_to "#{image_tag("")}","/davidcameron.html" %>
-      </div>
-      <div class="facebook_icon home_dc1">
-        <div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button"></div>
-      </div>
-
-      <div class="twitter_icon home_dc2">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="conservatives">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <div class="box_footer">
+        <div class="box_footer_left">
+          <%= image_tag 'facebook-box.png', :class => 'fb_box' %>
+          <%= image_tag 'twitter-box.png', :class => 'tw_box' %>
+          <%= image_tag 'google-box.png', :class => 'go_box' %>
+        </div>
+        <div class="button">
+          <%= link_to "#{image_tag("readmore.png")}","/yourteam.html" %>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="box2">
     <div class="box_contents second">
-      <div class="local_team">
-        <h2 class="subtitle">Your Local Team</h2>
-        <p class="subtext">Enter your postcode to find out more about your local team</p>
+      <div class="box_title_wrapper">
+        <h2 class="subtitle">your local team</h2>
       </div>
-       <!-- TEMP DIV FOR FORM -->
-      <div style="background-color: #eeeeee; height: 36px; margin-top: 120px;">
+      <div class="box_image">
+        <%= image_tag 'small-island-britain-speech.png', :class => 'david_speech' %>
       </div>
-      <div class="button">
-        <%= link_to "#{image_tag("")}","/yourteam.html" %>
+      <div class="box_footer">
+        <div class="box_footer_left">
+        </div>
+        <div class="button">
+          <%= link_to "#{image_tag("search.png")}","/yourteam.html" %>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="box3">
     <div class="box_contents third">
-      <h2 class="subtitle">Campaign Online</h2>
-      <p class="subtext"><%= lorem.sentence %></p>
-      <div class="box_image">
-        <%= link_to "#{image_tag("")}", "" %>
+      <div class="box_title_wrapper">
+        <h2 class="subtitle">campaign</h2>
       </div>
-      <div class="button">
-        <%= link_to "#{image_tag("")}","/campaigns.html" %>
+      <div class="box_image">
+        <%= image_tag 'small-island-britain-speech.png', :class => 'david_speech' %>
+      </div>
+      <div class="box_footer">
+        <div class="box_footer_left">
+          <p>be part of the campaign – sign up for updates</p>
+        </div>
+        <div class="button">
+          <%= link_to "#{image_tag("getgoing.png")}","/yourteam.html" %>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="box4">
     <div class="box_contents fourth">
-      <h2 class="subtitle">Become a supporter/join the party</h2>
-      <p class="subtext"><%= lorem.sentence %></p>
-      <div class="box_image">
-        <%= link_to "#{image_tag("")}", "" %>
+      <div class="box_title_wrapper">
+        <h2 class="subtitle">become a supporter/join</h2>
       </div>
-      <div class="button">
-        <%= link_to "#{image_tag("")}","/join.html" %>
+      <div class="box_image box_background">
+       
+        <p>support our plans for hardworking people.</p>
+        <p>Become a supporter of the Party for as little as £1.</p>
+      </div>
+      <div class="box_footer">
+        <div class="box_footer_left">
+          <p>Join the campaign today</p>
+        </div>
+        <div class="button">
+          <%= link_to "#{image_tag("join.png")}","/yourteam.html" %>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="box5">
-    <div class="box_contents fifth">
-      <h2 class="subtitle">Volunteer with Team 2015</h2>
-      <p class="subtext"><%= lorem.sentence %></p>
-      <div class="box_image">
-        <%= link_to "#{image_tag("")}", "" %>
+    <div class="box_contents fith">
+      <div class="box_title_wrapper">
+        <h2 class="subtitle">volunteer with a team 2015</h2>
       </div>
-      <div class="button">
-        <%= link_to "#{image_tag("")}","/volunteer.html" %>
+      <div class="box_image">
+        <%= image_tag 'small-island-britain-speech.png', :class => 'david_speech' %>
+      </div>
+      <div class="box_footer">
+        <div class="box_footer_left">
+          <p>Help us win the next election</p>
+        </div>
+        <div class="button">
+          <%= link_to "#{image_tag("signup.png")}","/yourteam.html" %>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="box6">
     <div class="box_contents sixth">
-      <h2 class="subtitle">Donate</h2>
-      <p class="subtext"><%= lorem.sentence %></p>
-
-      <div class="button">
-        <%= link_to "#{image_tag("")}","/donate.html" %>
+      <div class="box_title_wrapper">
+        <h2 class="subtitle">donate</h2>
+      </div>
+      <div class="box_image">
+        <%= image_tag 'small-island-britain-speech.png', :class => 'david_speech' %>
+      </div>
+      <div class="box_footer">
+        <div class="box_footer_left">
+          <p>Every donation makes a difference</p>
+        </div>
+        <div class="button">
+          <%= link_to "#{image_tag("donate.png")}","/yourteam.html" %>
+        </div>
       </div>
     </div>
   </div>
+
+  
 </div>
