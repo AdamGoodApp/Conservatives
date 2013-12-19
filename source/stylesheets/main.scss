@@ -46,6 +46,7 @@ body {
 
 		footer {
 			background-color: #206db2;
+			clear: both;
 
 			ul {
 				list-style-type: none;
@@ -112,7 +113,8 @@ body {
 // ********
 @each $i in $boxgrid {
     .#{$i} {
-		display:inline-block;
+		float: left;
+		margin-bottom: 20px;
 	}
 }
 
